@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                text-decoration: none;
+                list-style: none;
+            }
+            #logo {
+                padding: 10px;
+            }
+            #logo a {
+                font-weight: bolder;
+                color: rgb(16, 165, 165);
+                font-size: 35px;
+            }
+            #mainmenu {
+                width: 100%;
+                height: 51px;
+                background-color: rgb(16, 165, 165);
+            }
+            #mainmenu li {
+                float: left;
+            }
+            #mainmenu li a {
+                color: #000;
+                display: inline-block;
+                padding: 15px 10px;
+            }
+            #mainmenu li a:hover {
+                background-color: turquoise;
+            }
+            section {
+                width: 98%;
+                height: 1400px;
+                margin: 0 auto;
+            }
+            .box img {
+                width: 100%;
+            }
+            .box {
+                width: 95%;
+                margin: 0 auto;
+                border: 1px solid #ccc;
+                margin-top: 20px;
+            }
+            .text {
+                margin: 2%;
+            }
+            .text h2 {
+                font-size: 20px;
+            }
+            .text p {
+                font-size: 14px;
+            }
+            .tomato {
+                position: relative;
+            }
+            .tomato > p {
+                background-color: rgb(64, 179, 224);
+                width: 80px;
+                height: 80px;
+                border-radius: 40px;
+                line-height: 80px;
+                text-align: center;
+                font-size: 13px;
+                color: #fff;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+            .box a {
+                display: inline-block;
+                background-color: rgb(32, 123, 197);
+                padding: 5px 15px;
+                margin: 2% 0;
+                color: #fff;
+                font-size: 14px;
+            }
+            .box:hover {
+                cursor: pointer;
+                box-shadow: 0 0 10px #ccc;
+            }
+            #number {
+                width: 200px;
+                margin: 30px auto;
+            }
+            #number a {
+                display: inline-block;
+                border: 1px solid #ccc;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                color: #000;
+                font-size: 14px;
+            }
+            #number a:first-child {
+                background-color: #999;
+                color: #fff;
+            }
+            footer {
+                height: 80px;
+                border-top: 1px solid #ccc;
+            }
+            footer p {
+                color: rgb(97, 97, 97);
+                font-size: 15px;
+                padding: 20px 10px;
+            }
+            @media screen and (min-width: 780px) {
+                .box_1 {
+                    width: 46%;
+                    margin-left: 2.5%;
+                    float: left;
+                }
+                .clear {
+                    clear: both;
+                }
+                /* #article{
+                width: 95%;
+                margin: 0 auto;
+            } */
+                #number {
+                    clear: both;
+                    /* border: 1px solid red; */
+                    width: 200px;
+                    /* margin-top: 280px; */
+                }
+                .tomato {
+                    position: relative;
+                }
+                .tomato > p {
+                    width: 100px;
+                    height: 100px;
+                    line-height: 100px;
+                    border-radius: 50px;
+                    /* position: absolute;
+                    top: 170px;
+                    left: 750px; */
+                }
+            }
+            @media screen and (min-width: 781px) and (max-width: 1023px) {
+            }
+            @media screen and (min-width: 1024px) {
+                section {
+                    width: 80%;
+                }
+                #logo {
+                    margin-left: 11%;
+                }
+                #mainmenu ul {
+                    padding-left: 220px;
+                }
+                #number {
+                    /* margin-top: 350px; */
+                }
+                .tomato > p {
+                    width: 100px;
+                    height: 100px;
+                    line-height: 100px;
+                    border-radius: 50px;
+                    position: absolute;
+                    bottom: 140px;
+                    right: -40px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <div id="logo">
+                    <a>TimeSwitch</a>
+                </div>
+            </header>
+            <nav id="mainmenu">
+                <ul>
+                    <li><a href="#">메인</a></li>
+                    <li><a href="#">잡화</a></li>
+                    <li><a href="#">도구</a></li>
+                    <li><a href="#">외출</a></li>
+                    <li><a href="#">음식</a></li>
+                    <li><a href="#">문의</a></li>
+                </ul>
+            </nav>
+            <section>
+                <div class="box tomato">
+                    <img src="img/tomato-top.jpg" alt="img" />
+                    <p>PICK UP</p>
+                    <div class="text">
+                        <h2>토마토를 맛있게 먹는 방법</h2>
+                        <p>
+                            수확한 토마토를 바로 먹고 싶어서 서울 외곽에 있는
+                            토마토 농가에 직접 다녀왔...
+                        </p>
+                        <a href="#">계속 읽기 》</a>
+                    </div>
+                </div>
+                <div id="article">
+                    <div class="box box_1">
+                        <img src="img/color-top.jpg" alt="img" />
+                        <div class="text">
+                            <h2>방의 가구를 꾸미는 방법</h2>
+                            <p>
+                                방을 밝은 분위기로 연출하고 싶다면 화려한 가구를
+                                추천합니다. 크고 화려한 가구를 배치할 때는 방
+                                전체의...
+                            </p>
+                            <a href="#">계속 읽기 》</a>
+                        </div>
+                    </div>
+                    <div class="box box_1">
+                        <img src="img/potato-top.jpg" alt="img" />
+                        <div class="text">
+                            <h2>맛있는 감자 요리</h2>
+                            <p>
+                                감자가 맛있는 제철에 감자를 대량 구매하면
+                                좋지만, 쌓아둔 감자를 요리할 때 한 가지 패턴이
+                                반복되는...
+                            </p>
+                            <a href="#">계속 읽기 》</a>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="box box_1">
+                        <img src="img/can-top.jpg" alt="img" />
+                        <div class="text">
+                            <h2>통조림을 활용한 절약과 효율화</h2>
+                            <p>
+                                통조림은 장기간 보관할 수 있으면, 가격 대비
+                                효율도 괜찮습니다. 그리고 어려울 때 간단하게...
+                            </p>
+                            <a href="#">계속 읽기 》</a>
+                        </div>
+                    </div>
+                    <div class="box box_1">
+                        <img src="img/flower-top.jpg" alt="img" />
+                        <div class="text">
+                            <h2>꽃을 좋아하는 사람들을 위한 포인트</h2>
+                            <p>
+                                활짝 핀 꽃들에 둘러싸이고 싶을 때의 포인트를
+                                소개합니다. 계절마다 다양한 색상의...
+                            </p>
+                            <a href="#">계속 읽기 》</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="number">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+            </div>
+            <footer>
+                <p>Copyright ⓒ TimeSwitch</p>
+            </footer>
+        </div>
+    </body>
+</html>
