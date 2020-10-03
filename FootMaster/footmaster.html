@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footmaster</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            font-family: '나눔바른고딕', '맑은고딕';
+        }
+        /* #wrap{
+            width: 1000px;
+            margin: 0 auto;
+        } */
+        .clear{
+            clear: both;
+        }
+        header{
+            background-color: rgb(227, 227, 227);
+            background-image: url('img2/topbg2.jpg');
+            background-size: 70%;
+            height: 460px;
+            background-repeat: no-repeat;  
+            background-position: right; 
+        }
+        #name{
+            height: 60px;
+            width: 275px;
+            margin-left: 20px;
+            margin-top: 20px;
+            float: left;
+            background-image: url('img2/logo2.png');
+            background-size: 90%;
+            background-repeat: no-repeat;
+            text-indent: -9999px;
+        }
+        .mainmenu{
+            display: inline-block;
+            margin-left: 30px;
+        }
+        .mainmenu ul li{
+            float: left;
+            margin-right: 25px;
+            margin-top: 30px;
+            text-decoration: none;
+        }
+        .mainmenu ul li a{
+            color: rgb(134, 134, 134);
+            /* font-family: '나눔스퀘어'; */
+            font-weight: bold;
+            font-size: 18px;
+            display: inline-block;
+            /* border: 1px solid blue; */
+            width: 90px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+        }
+        .mainmenu ul li a:hover{
+            color: #4d79bb;
+            border-bottom: 2px solid #4d79bb;
+        }
+        .submenu{
+            display: inline-block;
+            float: right;
+            margin-right: 30px;
+        }
+        #eng{
+            background-image: url('img2/eng.png');
+            display: inline-block;
+            width: 46px;
+            height: 45px;
+            text-indent: -9999px;
+            background-size: 95%;
+            /* border: 1px solid blue; */
+        }
+        #jpn{
+            background-image: url('img2/jpn.png');
+            display: inline-block;
+            width: 46px;
+            height: 45px;
+            text-indent: -9999px;
+            background-size: 95%;
+        }
+        #chn{
+            background-image: url('img2/chn.png');
+            display: inline-block;
+            width: 46px;
+            height: 45px;
+            text-indent: -9999px;
+            background-size: 95%;
+        }
+        .submenu ul li{
+            float: left;
+            margin-right: 10px;
+            margin-top: 20px;
+            text-decoration: none;
+           
+        }
+        .main{
+            height: 500px;
+            width: 450px;
+            /* border: 1px solid blue; */
+            position: absolute;
+            top: 180px;
+            left: 100px;
+        }
+        .main h2{
+            /* margin-bottom: 10px; */
+            font-size: 28px;
+            color: rgb(150, 150, 150);
+            font-family: 'Roboto', sans-serif;
+            font-style: italic;
+        }
+        .main h1{
+            margin-bottom: 10px;
+            font-size: 50px;
+            color: #4d79bb;
+            font-family: 'Roboto', sans-serif;
+            font-style: italic;
+        }
+        .main p{
+            font-size: 11px;
+            line-height: 19px;
+            color: rgb(134, 134, 134);
+        }
+        section{
+            height: 500px;
+            /* border: 1px solid blue; */
+        }
+        .prod-list{
+            /* border: 1px solid red; */
+            list-style: none;
+            width: 1140px;
+            height: 180px;
+            margin: 0 auto;
+        }
+        .prod-list li{
+            float: left;
+            margin: 15px;
+            position: relative;
+             overflow: hidden; 
+             width: 255px;
+             /* border: 1px solid #ccc; */
+             box-shadow: 3px 3px 10px gray;
+        }
+        .prod-list h1{
+            font-size: 19px;
+            padding: 15px 0 10px 0;
+            color: #fff;
+            font-weight:600;
+        }
+        .prod-list img{
+            margin: 0;
+            padding: 0;
+            transition: all 0.8s;
+        }
+        .prod-list .caption{
+            width: 255px;
+            height: 190px;
+            /* padding: 0 10px; */
+            background-color: rgb(0, 0, 0, 0.5);
+            position: absolute;
+            top: 143px;
+            transition: all 1s;
+            /* opacity: 0; */
+        }
+        .prod-list li:hover .caption{
+            transform: translateY(-100px);
+            opacity: 1;
+        }
+        .prod-list , .prod-list .caption p{
+            color: #fff;
+            text-align: center;
+            /* font-family: '나눔스퀘어'; */
+        }
+        .prod-list img:hover{
+        transform: scale(1.2);
+        }
+        .caption p{
+            /* border: 1px solid red; */
+            font-size: 14px;
+            width: 230px;
+            margin: 0 auto;
+            /* font-family: '나눔스퀘어'; */
+            padding-top: 10px;
+        }
+        #box01 h2{
+            text-align: center;
+            font-size: 42px;
+            font-family: 'Roboto', sans-serif;
+            padding: 40px 0;
+            margin-top: 20px;
+            color: rgb(107, 107, 107);
+        }
+
+        #box02{
+            /* border: 1px solid purple; */
+            width: 1200px;
+            height: 300px;
+            margin: 0 auto;
+            margin-top: 70px;
+            padding: 10px 0;
+        }
+
+
+        #first{
+            /* border: 1px solid red; */
+            float: left;
+        }
+
+        #notice{
+            /* margin-top: 25px; */
+            margin-left: 50px;
+            width: 230px;
+            height: 240px;
+            background-color: rgb(227, 227, 227);
+            margin-right: 35px;
+            padding: 0 15px;
+            
+        }
+        #first h4{
+            text-align: left;
+            padding:20px 0 5px 10px;
+            color: #4d79bb;
+            font-size: 18px;
+            border-bottom: 2px solid #4d79bb;
+        }
+        #notice ul li:first-child{
+            padding-top: 10px;
+        }
+        
+        #notice ul li{
+            padding-left: 10px;
+            line-height: 30px;
+            border-bottom: 1px dotted rgb(124, 124, 124);
+        }
+        #notice ul li a{
+            color: rgb(77, 77, 77);
+            font-size: 12px;
+            font-weight: bold;  
+        }
+        #notice ul li a:hover{
+            color: #4d79bb;
+        }
+        #search{
+            float: left;
+        }
+        #searchbox{
+            margin: 20px 0;
+            margin-left: 85px;
+            width: 250px;
+        }
+        #second{
+            float: left;
+            margin-right: 30px;
+        }
+        #third p{
+            font-size: 14px;
+            
+        }
+        #third span{
+            font-weight: bold;
+            /* font-family: '나눔스퀘어'; */
+            font-size: 16px;
+            display: block;
+            padding-top: 5px;   
+            height: 10px;     
+        }
+     
+
+
+
+
+
+
+
+
+        footer{
+            margin-top: 80px;
+            height: 120px;
+            background-color: rgb(227, 227, 227);
+            /* border: 1px solid yellow; */
+            /* display: inline-block;  */
+            /* text-align: center; */
+            
+          
+        }
+        footer #a p{
+            color: rgb(94, 94, 94);
+            font-size: 12px;   
+            float: left;
+            padding-left: 250px;
+            margin-top: 30px;
+        }
+        footer #b img{
+            width: 150px;
+            height: 45px;
+            float: right;
+            /* margin-top: -25px; */
+            margin-right: 10px;
+            margin-top: 30px;
+        }
+    
+        #b{
+            /* border: 1px solid red; */
+            width: 330px;
+            height: 100px;
+            margin-left: 670px;
+        }
+        /* .p{
+            font-size: 10px;
+            color: rgb(158, 158, 158);
+            text-align: center;
+            margin-bottom: 80px;
+        } */
+        .middle{
+            width: 220px;
+            border-bottom: 1px solid #ccc;
+            margin: 0 auto;
+            margin-bottom: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+    <header>
+        <div id="background"></div>
+        <a href="footmaster.html" id="name">logo</a>
+        <div class="mainmenu">
+            <ul>
+                <li><a href="aboutus.html">회사소개</a></li>
+                <li><a href="products.html">제품소개</a></li>
+                <li><a href="customer.html">주문제작</a></li>
+                <li><a href="service.html">고객센터</a></li>
+            </ul>
+        </div>
+        <div class="submenu">
+            <ul>
+                <li><a href="#" id="eng">ENG</a></li>
+                <li><a href="#" id="jpn">JPN</a></li>
+                <li><a href="#" id="chn">CHN</a></li>
+            </ul>
+        </div>
+     <div class="main">
+         <h2>The Pride Of</h2>
+         <h1>&nbsp;&nbsp;&nbsp;&nbsp;Top Quality</h1>
+         <p>FOOTMASTER has been manufacturing casters & wheels. We have a reputation for excellence by supplying domestic and foreign customers with not only functional quality casters but also general casters such as light, medium and heavy duty casters. FOOTMASTER provide for ease of movement and level setting, for a wide variety of machines, equipment, and work stations. We are specializing leveling caster, shock absorbing caster, precision caster and caster wheel.</p>
+
+     </div>   
+
+    </header>
+    <div class="clear"></div>
+    <section>
+        <article id="box01">
+            <h2>Our Product</h2>
+            <div id="container">
+                <ul class="prod-list">
+                    <li>
+                        <img src="img2/ko.jpg" alt="a" width="255" height="190">
+                        <div class="caption">
+                            <h1>고하중 캐스터</h1>
+                            <p>초고하중에서도 부드러운 운정성을 보여주는 캐스터.
+                            1개당 허용하중이 8톤까지 견디는 캐스터</p>
+                            <!-- <h4>가격 : 12,345원</h4> -->
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img2/no.jpg" width="255" height="190" alt="a">
+                        <div class="caption">
+                            <h1>높낮이조절 캐스터</h1>
+                            <p>우수한 구름성, 손쉬운 높낮이 조절, 방진성을 겸한 다용도 캐스터.
+                            측정장비, 세척장비 등 각종 장비류 및 워크스테이션 등에 적합한 캐스터</p>
+                            <!-- <h4>가격 : 12,345원</h4> -->
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img2/kyeong.jpg" width="255" height="190" alt="a">
+                        <div class="caption">
+                            <h1>경하중 캐스터</h1>
+                            <p>지덕산업(주)으로부터 출발하는 물류혁신 캐스터.
+                            부드럽고 조용한 운전을 제공하는 캐스터</p>
+                            <!-- <h4>가격 : 12,345원</h4> -->
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img2/chung.jpg" width="255" height="190" alt="a">
+                        <div class="caption">
+                            <h1>충격흡수식 캐스터</h1>
+                            <p>스프링 쿠션이 아닌 고무 쿠션을 사용함으로 인해 수직하중으로부터
+                            우수한 안정성을 제공하는 캐스터</p>
+                            <!-- <h4>가격 : 12,345원</h4> -->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </article>
+
+        <article id="box02">
+        <div class="middle"></div>
+            <article id="first">
+                <div id="searchbox">
+                    <input type="text" name="text" height="50px">
+                    <input type="submit" value="SEARCH">
+                </div>
+                <div id="notice">
+                <h4>NOTICE</h4>
+                <ul>
+                    <li><a href="#">º 미국 인텔(Intel)납품 성공</a></li>
+                    <li><a href="#">º 제품 그룹별 CAD 파일 등록</a></li>
+                    <li><a href="#">º 미국 항공 Boing사 납푹 성공</a></li>
+                    <li><a href="#">º2019 해외전시회 출품</a></li>
+                </ul>
+            </div>
+            </article>
+            <article id="second">
+                <iframe width="500" height="300" src="https://www.youtube.com/embed/KrLpVu_Z8k8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+            </article>
+
+            <article id="third">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3187.929683707783!2d126.76978931560686!3d36.96373616617603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b02d7e2fccc13%3A0x5db8cf3d1a60be50!2z7Lap7LKt64Ko64-EIOuLueynhOyLnCDshqHslYXsnY0g67aA6rOh6rO164uoNOq4uCAyNy01MA!5e0!3m2!1sko!2skr!4v1589341098183!5m2!1sko!2skr" width="290" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </article>
+
+        </article>
+
+        
+
+
+
+
+
+
+
+
+        </section>
+        <div class="clear"></div>
+    <footer>
+        <div id="a">
+        <p>
+            충청남도 당진시 송악읍 부곡공단 4길 27-50(구 한진리 408-17) (우)343-823<br>
+            Tel. 041-357-8390 / Fax : 041-357-8395 / E-mail : gdok@gdok.co.kr
+        </p>
+    </div>
+
+
+        <div id="b">
+
+        <img src="img2/footerlogo.jpg" alt="aa">
+        <img src="img2/footerimg.jpg" alt="aa">
+        </div>
+    
+
+    </footer>
+    
+</div>
+</body>
+</html>

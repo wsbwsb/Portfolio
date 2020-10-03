@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            font-family:'나눔바른고딕', '맑은고딕';
+        }
+        body{
+            background-color: rgb(226,226,228);
+            background-image: url('img2/subbg1.jpg');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position:0 -50px;
+        }
+        header{
+            /* background-color: rgb(227, 227, 227); */
+            /* background-image: url('img2/topbg2.jpg'); */
+            background-size: 70%;
+            height: 130px;
+            background-repeat: no-repeat;  
+            background-position: right; 
+            /* border-bottom: 1px solid #ccc; */
+        }
+        #name{
+            height: 60px;
+            width: 275px;
+            margin-left: 20px;
+            margin-top: 20px;
+            float: left;
+            background-image: url('img2/logo2.png');
+            background-size: 90%;
+            background-repeat: no-repeat;
+            text-indent: -9999px;
+        }
+        .mainmenu{
+            display: inline-block;
+            margin-left: 30px;
+        }
+        .mainmenu ul li{
+            float: left;
+            margin-right: 25px;
+            margin-top: 30px;
+            text-decoration: none;
+        }
+        .mainmenu ul li a{
+            color: rgb(134, 134, 134);
+            /* font-family: '나눔스퀘어'; */
+            font-weight: bold;
+            font-size: 18px;
+            display: inline-block;
+            /* border: 1px solid blue; */
+            width: 90px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+        }
+        .mainmenu ul li:first-child a{
+            color: #4d79bb;
+            border-bottom: 2px solid #4d79bb;
+        }
+        .mainmenu ul li a:hover{
+            color: #4d79bb;
+            border-bottom: 2px solid #4d79bb;
+        }
+        .submenu{
+            display: inline-block;
+            float: right;
+            margin-right: 30px;
+        }
+        #eng{
+            background-image: url('img2/eng.png');
+            display: inline-block;
+            width: 46px;
+            height: 45px;
+            text-indent: -9999px;
+            background-size: 95%;
+            /* border: 1px solid blue; */
+        }
+        #jpn{
+            background-image: url('img2/jpn.png');
+            display: inline-block;
+            width: 46px;
+            height: 45px;
+            text-indent: -9999px;
+            background-size: 95%;
+        }
+        #chn{
+            background-image: url('img2/chn.png');
+            display: inline-block;
+            width: 46px;
+            height: 45px;
+            text-indent: -9999px;
+            background-size: 95%;
+        }
+        .submenu ul li{
+            float: left;
+            margin-right: 10px;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+        #submenu{
+            float: left;
+            width: 220px;
+            height: 730px;
+            /* background-color: rgba(255,255,255,0.5); */
+            background-color: #fff;
+            margin-left:20px;
+            margin-top: 30px;
+            /* position: fixed; */
+            border-top: 5px solid #4d79bb;
+        }
+        section{
+            width: 950px;
+            margin-left: 270px;
+            margin-top: 30px;
+            /* background-color: rgba(255,255,255,0.5); */
+            background-color: #fff;
+            border-top: 5px solid #4d79bb;
+        }
+        #submenu li{
+            padding: 0 10px;
+        }
+        #submenu h2{
+            padding: 20px 0 10px 20px;
+            /* font-family:'나눔스퀘어'; */
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        #submenu a{
+            color: rgb(134, 134, 134);
+            font-size: 15px;
+            /* font-family: '나눔스퀘어'; */
+            font-weight: bold;
+            display: block;
+            padding: 20px 10px;
+            border-bottom: 1px solid #ccc;
+            /* border: 1px solid blue; */
+        }
+        #submenu li:first-child a{
+            color: #4d79bb;
+            background-color: rgb(230, 230, 230);
+        }
+        #submenu li:last-child a{
+            border-bottom: 0;
+        }
+        #submenu a:hover{
+            color: #4d79bb;
+            background-color: rgb(230, 230, 230);
+        }
+        article{
+            padding: 20px 30px;
+        }
+        article h2{
+            font-size: 23px;
+            font-weight: bolder;
+            margin: 10px 0;
+            padding-bottom: 20px;
+            border-bottom:1px solid #ccc
+        }
+        article h4{
+            color: gray;
+            font-size: 16px;
+            background-color: #f2f2f2;
+            border: 1px solid rgb(202, 202, 202);
+            border-radius: 30px;
+            width: 90px;
+            padding: 5px 0;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        article p{
+            font-size: 14px;
+            line-height: 25px;
+            /* font-family: '나눔스퀘어'; */
+            width: 710px;
+        }
+        span{
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .about{
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 40px;
+            margin-left: 10px;
+        }
+        .about:last-child{
+            border-bottom: 0;
+        }
+        .imgimg{
+            margin-top: 10px;
+        }
+        .swf{
+            display: inline-block;
+            height: 200px;
+            width: 400px;
+            padding-top: 30px;
+            margin-right: 10px;
+            /* border: 1px solid red; */
+        }
+        .swf h5{
+            background-color: #f2f2f2;
+            border: 1px solid rgb(202, 202, 202);
+            border-radius: 30px;
+            width: 150px;
+            text-align: center;
+            color: gray;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 5px;
+            /* margin-left: 70px; */
+            margin-bottom: 5px;
+        }
+        .swf p{
+            font-size: 13px;
+            width: 220px;
+            float: right;
+            /* font-family:'나눔스퀘어'; */
+        }
+        
+        footer{
+            margin-top: 50px;
+            height: 100px;
+            /* border: 1px solid yellow; */
+            /* display: inline-block;  */
+            /* text-align: center; */
+            
+          
+        }
+        footer #a p{
+            color: rgb(94, 94, 94);
+            font-size: 12px;   
+            float: left;
+            padding-left: 300px;
+        }
+        footer #b img{
+            width: 150px;
+            height: 45px;
+            float: right;
+            /* margin-top: -25px; */
+            margin-right: 10px;
+        }
+    
+        #b{
+            /* border: 1px solid red; */
+            width: 330px;
+            height: 100px;
+            margin-left: 710px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div id="background"></div>
+            <a href="footmaster.html" id="name">logo</a>
+            <div class="mainmenu">
+                <ul>
+                    <li><a href="aboutus.html">회사소개</a></li>
+                    <li><a href="products.html">제품소개</a></li>
+                    <li><a href="customer.html">주문제작</a></li>
+                    <li><a href="service.html">고객센터</a></li>
+                </ul>
+            </div>
+            <div class="submenu">
+                <ul>
+                    <li><a href="#" id="eng">ENG</a></li>
+                    <li><a href="#" id="jpn">JPN</a></li>
+                    <li><a href="#" id="chn">CHN</a></li>
+                </ul>
+            </div>
+        </header>
+        <nav id="submenu">
+            <h2>회사소개</h2>
+            <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">테스트보유장비현황</a></li>
+                <li><a href="#">인증현황</a></li>
+                <li><a href="#">취급설명</a></li>
+                <li><a href="#">찾아오시는길</a></li>
+            </ul>
+        </nav>
+        <section>
+            <article>
+              <h2>회사소개</h2>
+                <div class="about">
+                   <h4>인사말</h4>
+                   <img src="img2/about.jpg" alt="aa">
+                   <p>
+                    <span>일류품에의 자부심</span><br>
+지덕산업(주)은 1989년 설립이래 FOOT MASTER라는 브랜드로 캐스터만을 생산하는 캐스터 전문기업입니다. 높낮이 조절용
+캐스터, 충격흡수식 캐스터 등 고품질의 기능성 캐스터와 경, 중, 고하중 일반 물류캐스터 등을 개발하여 국내외 유수업체에
+공급하고 그 우수성을 인정받고 있습니다. 세계최고 수준의 품질실현을 목표로하는 지덕산업(주)은 지속적인 연구개발과
+생산설비의 자동화 및 각종 시험설비로 최상의 제품을 최적의 조건으로 공급하기 위해 최선을 다하고 있습니다.
+더욱이, 지덕산업은 ISO9001 인증기업으로서 엄격한 품질관리를 적용하고 있습니다.
+                   </p>
+                </div>
+                <div class="about">
+                    <div class="swf">
+                    <h5>높낮이조절 캐스터</h5>
+                    <embed src="img2/leveling2.swf" width="150" height="150"></embed>
+                    <p>Foot Master 시스템의 높낮이조절 캐스터는 각종 장비류의 특정장소로의 이동과 고정에
+                        적합한 기능성 캐스터입니다.</p>
+                    </div>
+                    <div class="swf">
+                    <h5>충격흡수식 캐스터</h5>
+                    <embed src="img2/shock2.swf" width="150" height="150"></embed>
+                    <p>Foot Master 시스템의 충격흡수식 캐스터는 수직하중으로의 충격을 완만하게 흡수할 수
+                        있는 기능성 캐스터입니다.</p>
+                    </div>
+                </div>
+                <div class="about">
+                    <h4>제품소개</h4>
+                    <img src="img2/about2.jpg" alt="aa" class="imgimg">
+                </div>
+                <div class="about">
+                    <h4>공정설비</h4>
+                    <img src="img2/about3.jpg" alt="aa" class="imgimg">
+                </div>
+            </article>
+        </section>
+        <footer>
+            <div id="a">
+            <p>
+                충청남도 당진시 송악읍 부곡공단 4길 27-50(구 한진리 408-17) (우)343-823<br>
+                Tel. 041-357-8390 / Fax : 041-357-8395 / E-mail : gdok@gdok.co.kr
+            </p>
+        </div>
+    
+    
+            <div id="b">
+    
+            <img src="img2/footerlogo.jpg" alt="aa">
+            <img src="img2/footerimg.jpg" alt="aa">
+            </div>
+        
+    
+        </footer>
+    </div>
+</body>
+</html>

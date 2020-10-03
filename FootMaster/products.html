@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            font-family: '나눔바른고딕', '맑은고딕';
+        }
+        body{
+            background-color: rgb(226,226,228);
+            background-image: url('img2/subbg1.jpg');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position:0 -50px;
+        }
+        header{
+            /* background-color: rgb(227, 227, 227); */
+            /* background-image: url('img2/topbg2.jpg'); */
+            background-size: 70%;
+            height: 130px;
+            background-repeat: no-repeat;  
+            background-position: right; 
+            /* border-bottom: 1px solid #ccc; */
+        }
+        #name{
+            height: 60px;
+            width: 275px;
+            margin-left: 20px;
+            margin-top: 20px;
+            float: left;
+            background-image: url('img2/logo2.png');
+            background-size: 90%;
+            background-repeat: no-repeat;
+            text-indent: -9999px;
+        }
+        .mainmenu{
+            display: inline-block;
+            margin-left: 30px;
+        }
+        .mainmenu ul li{
+            float: left;
+            margin-right: 25px;
+            margin-top: 30px;
+            text-decoration: none;
+            list-style: none;
+        }
+        .mainmenu ul li a{
+            color: rgb(134, 134, 134);
+            /* font-family: 'Arial'; */
+            font-weight: bold;
+            font-size: 18px;
+            display: inline-block;
+            /* border: 1px solid blue; */
+            width: 90px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+        }
+        .mainmenu ul li:nth-child(2) a{
+            color: #4d79bb;
+            border-bottom: 2px solid #4d79bb;
+        }
+        .mainmenu ul li a:hover{
+            color: #4d79bb;
+            border-bottom: 2px solid #4d79bb;
+        }
+        .submenu{
+            display: inline-block;
+            float: right;
+            margin-right: 30px;
+        }        
+        .submenu li{
+            list-style: none;
+        }
+        #eng{
+            background-image: url('img2/eng.png');
+            display: inline-block;
+            width: 46px;
+            height: 45px;
+            text-indent: -9999px;
+            background-size: 95%;
+            /* border: 1px solid blue; */
+        }
+        #jpn{
+            background-image: url('img2/jpn.png');
+            display: inline-block;
+            width: 46px;
+            height: 45px;
+            text-indent: -9999px;
+            background-size: 95%;
+        }
+        #chn{
+            background-image: url('img2/chn.png');
+            display: inline-block;
+            width: 46px;
+            height: 45px;
+            text-indent: -9999px;
+            background-size: 95%;
+        }
+        .submenu ul li{
+            float: left;
+            margin-right: 10px;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+        #submenu{
+            float: left;
+            width: 220px;
+            height: 1000px;
+            /* background-color: rgba(255,255,255,0.5); */
+            background-color: #fff;
+            margin-left:20px;
+            margin-top: 30px;
+            /* position: fixed; */
+            border-top: 5px solid #4d79bb;
+        }
+        section{
+            width: 750px;
+            height: 2320px;
+            margin-left: 270px;
+            margin-top: 30px;
+            /* background-color: rgba(255,255,255,0.5); */
+            background-color: #fff;
+            border-top: 5px solid #4d79bb;
+
+        }
+        #submenu li{
+            padding: 0 10px;
+            list-style: none;
+        }
+        #submenu h2{
+            padding: 20px 0 10px 20px;
+            /* font-family: 'Arial'; */
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        #submenu a{
+            color: rgb(134, 134, 134);
+            font-size: 15px;
+            /* font-family: 'Arial'; */
+            font-weight: bold;
+            display: block;
+            padding: 20px 10px;
+            border-bottom: 1px solid #ccc;
+            /* border: 1px solid blue; */
+        }
+        #submenu ul li:first-child a{
+            border-bottom: 0;
+            /* color: #4d79bb;
+            background-color:rgb(230, 230, 230); */
+        }
+        #submenu li:last-child a{
+            border-bottom: 0;
+        }
+        #submenu>ul>li:nth-child(2)>a{
+            border-top: 1px solid #ccc;
+        }
+        #submenu>ul>li>a:hover{
+            color: #4d79bb;
+            background-color: rgb(230, 230, 230);
+        }
+        #submenu>ul>li:nth-child(1)>ul>li>a:hover{
+            color: #4d79bb;
+        }
+        #submenu>ul>li:nth-child(1)>ul>li:nth-child(2)>a{
+            color: #4d79bb;
+            /* background-color: rgb(230, 230, 230); */
+        }
+        #submenu>ul>li:nth-child(1)>a{
+            color: #4d79bb;
+            background-color: rgb(230, 230, 230);
+        }
+        #caster li a{
+            border: 1px solid transparent;
+            font-size: 13px;
+            padding: 10px;
+        }
+        aside{
+            width: 150px;
+            height: 500px;
+            
+            text-decoration: none;
+            float: right;
+            border: 2px solid gray;
+            border-radius: 5px;
+            margin-top: 40px;
+            margin-right: 40px;
+            position: fixed;
+            left: 1050px;
+        }
+        aside h5{
+            text-align: center;
+            font-size: 20px;
+            background-color: gray;
+            color: rgb(230, 230, 230);
+            line-height: 30px;
+        }
+        aside ul li {
+            padding: 10px;
+            line-height: 10px;
+            list-style: none;
+            
+        }
+        aside ul li a{
+            color: rgb(109, 109, 109);
+            font-size: 14px;
+            font-weight: bold;
+        }
+        aside ul li a:hover{
+            color: #4d79bb
+        }
+        footer{
+            margin-top: 50px;
+            height: 100px;
+            /* border: 1px solid yellow; */
+            /* display: inline-block;  */
+            /* text-align: center; */
+            
+          
+        }
+        footer #a p{
+            color: rgb(94, 94, 94);
+            font-size: 12px;   
+            float: left;
+            padding-left: 300px;
+        }
+        footer #b img{
+            width: 150px;
+            height: 45px;
+            float: right;
+            /* margin-top: -25px; */
+            margin-right: 10px;
+        }
+    
+        #b{
+            /* border: 1px solid red; */
+            width: 330px;
+            height: 100px;
+            margin-left: 710px;
+        }
+        article{
+            width: 650px;
+            height: 1500px;
+            float: left;
+            border: 1px solid red;
+            /* margin-left: 30px; */
+            background-color: #fff;
+        }
+        select{
+            width: 100px;
+            height: 25px;
+            float: left;
+            margin-right: 10px;
+        }
+        #search{
+            width: 100px;
+            height: 25px;
+            background-color: #4d79bb;
+            float: left;
+            
+        }
+        #search a{
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            line-height: 25px;
+
+        }
+        #search a:hover{
+            color: rgb(35, 35, 179);
+        }
+        #searchbar{
+            float: right;
+            margin-top: 10px;
+            margin-right: 20px;
+        }
+        .product{
+            float: left;
+            width: 280px;
+            height: 220px;
+            /* border: 1px solid blue; */
+            padding: 10px;
+            margin: 40px 0 0 40px;
+            box-shadow:3px 3px 10px #ccc;;
+        }
+        .product h3{
+            font-size: 18px;
+            color: gray;
+            padding: 0 0 10px 5px;
+            border-bottom: 1px dotted #ccc;
+        }
+        .product>img{
+            float: left;
+            padding: 10px 0;
+            transition: all 0.5s;
+        }
+        .product>img:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        .icon{
+            width: 60px;
+            float: left;
+        }
+        .icon img{
+            width: 35px;
+            height: 35px;
+        }
+        .icon p{
+            width: 40px;
+            font-size: 12px;
+            text-align: center;
+            color: gray;
+        }
+        .iconbox{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div id="background"></div>
+            <a href="footmaster.html" id="name">logo</a>
+            <div class="mainmenu">
+                <ul>
+                    <li><a href="aboutus.html">회사소개</a></li>
+                    <li><a href="products.html">제품소개</a></li>
+                    <li><a href="customer.html">주문제작</a></li>
+                    <li><a href="service.html">고객센터</a></li>
+                </ul>
+            </div>
+            <div class="submenu">
+                <ul>
+                    <li><a href="#" id="eng">ENG</a></li>
+                    <li><a href="#" id="jpn">JPN</a></li>
+                    <li><a href="#" id="chn">CHN</a></li>
+                </ul>
+            </div>
+        </header>
+        <nav id="submenu">
+            <h2>제품소개</h2>
+            <ul>
+                <li><a href="#">높낮이조절캐스터</a>
+                    <ul id="caster">
+                        <li><a href="#">표기법</a></li>
+                        <li><a href="#">GD 시리즈</a></li>
+                        <li><a href="#">GDN 시리즈</a></li>
+                        <li><a href="#">GDR 시리즈</a></li>
+                        <li><a href="#">SGDN 시리즈(스테인레스)</a></li>
+                        <li><a href="#">바퀴류</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">충격흡수식캐스터</a></li>
+                <li><a href="#">AGV캐스터</a></li>
+                <li><a href="#">경하중캐스터</a></li>
+                <li><a href="#">고하중캐스터</a></li>
+                <li><a href="#">조절자</a></li>
+                <li><a href="#">대차</a></li>
+                <li><a href="#">바퀴/롤러</a></li>
+                <li><a href="#">주문제작</a></li>
+            </ul>
+        </nav>
+        <aside>
+            <h5>Product List</h5>
+            <ul>
+                <li><a href="#">GD-40-F</a></li>
+                <li><a href="#">GD-40-S</a></li>
+                <li><a href="#">GD-60-F</a></li>
+                <li><a href="#">GD-60-S</a></li>
+                <li><a href="#">GD-60-F-PEU</a></li>
+                <li><a href="#">GD-60-F-PUS</a></li>
+                <li><a href="#">GD-80-F</a></li>
+                <li><a href="#">GD-80-S</a></li>
+                <li><a href="#">GD-100-F</a></li>
+                <li><a href="#">GD-100-S</a></li>
+                <li><a href="#">GD-100-F-PEU</a></li>
+                <li><a href="#">GD-100-F-PUS</a></li>
+                <li><a href="#">GD-120-F</a></li>
+                <li><a href="#">11111</a></li>
+                <li><a href="#">GD-120-S</a></li>
+            </ul>
+        </aside>
+        <section>
+            <div id="searchbar"><select name="first" id="first">
+                <option>℃/mm/kg</option>
+                <option>℉/＂/lsb</option>
+            </select>
+            <select name="capa" id="second">
+                <option value="" selected>허용하중</option>
+                <option value="250">0 ~ 250 kg</option>
+                <option value="500">250 ~ 500 kg</option>
+                <option value="1000">500 ~ 1,000 kg</option>
+                <option value="1500">1,000 ~ 1,500 kg</option>
+                <option value="2000">1,500 ~ 2,000 kg</option>
+                <option value="3000">2,000 ~ 3,000 kg</option>
+                <option value="4000">3,000 ~ 4,000 kg</option>
+                <option value="6000">4,000 ~ 6,000 kg</option>
+                <option value="8000">6,000 ~ 8,000 kg</option>
+                <option value="10000">10 ton</option>
+                <option value="20000">20 ton</option>
+              </select>
+        
+              <select name="diam" id="third">
+                <option value="" selected>바퀴외경</option>
+                <option value="100">100 mm 이하</option>
+                <option value="130">100 ~ 130 mm</option>
+                <option value="150">130 ~ 150 mm</option>
+                <option value="200">150 ~ 200 mm</option>
+                <option value="250">200 mm 이상</option>
+                </select>
+        
+                <div id="search">
+                    <a href="#">SEARCH</a>
+                </div>
+            </div>
+                <div class="product">
+                    <h3>GD-40 평판취부형</h3>
+                    <img src="img2/product1.jpg" alt="p">
+                    <div class="iconbox">
+                    <div class="icon">
+                        <img src="img2/icon1.JPG" alt="i">
+                        <p>42mm</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon2.JPG" alt="i">
+                        <p>60kg</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon3.JPG" alt="i">
+                        <p>71+10mm</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <h3>GD-40 일자취부형</h3>
+                    <img src="img2/product2.jpg" alt="p">
+                    <div class="iconbox">
+                    <div class="icon">
+                        <img src="img2/icon1.JPG" alt="i">
+                        <p>42mm</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon2.JPG" alt="i">
+                        <p>60kg</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon3.JPG" alt="i">
+                        <p>71+10mm</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <h3>GD-60 평판취부형</h3>
+                    <img src="img2/product3.jpg" alt="p">
+                    <div class="iconbox">
+                    <div class="icon">
+                        <img src="img2/icon1.JPG" alt="i">
+                        <p>50mm</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon2.JPG" alt="i">
+                        <p>280kg</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon3.JPG" alt="i">
+                        <p>82+10mm</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <h3>GD-60 일자취부형</h3>
+                    <img src="img2/product4.jpg" alt="p">
+                    <div class="iconbox">
+                    <div class="icon">
+                        <img src="img2/icon1.JPG" alt="i">
+                        <p>50mm</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon2.JPG" alt="i">
+                        <p>280kg</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon3.JPG" alt="i">
+                        <p>82+10mm</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <h3>GD-60 평판취부형(EU형 평판)</h3>
+                    <img src="img2/product5.jpg" alt="p">
+                    <div class="iconbox">
+                    <div class="icon">
+                        <img src="img2/icon1.JPG" alt="i">
+                        <p>50mm</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon2.JPG" alt="i">
+                        <p>280kg</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon3.JPG" alt="i">
+                        <p>82+10mm</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <h3>GD-80 일자취부형</h3>
+                    <img src="img2/product6.jpg" alt="p">
+                    <div class="iconbox">
+                    <div class="icon">
+                        <img src="img2/icon1.JPG" alt="i">
+                        <p>63mm</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon2.JPG" alt="i">
+                        <p>550kg</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon3.JPG" alt="i">
+                        <p>103+15mm</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <h3>GD-60 평판취부형(US형 평판)</h3>
+                    <img src="img2/product7.jpg" alt="p">
+                    <div class="iconbox">
+                    <div class="icon">
+                        <img src="img2/icon1.JPG" alt="i">
+                        <p>50mm</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon2.JPG" alt="i">
+                        <p>280kg</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon3.JPG" alt="i">
+                        <p>82+10mm</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <h3>GD-100 평판취부형</h3>
+                    <img src="img2/product6.jpg" alt="p111">
+                    <div class="iconbox">
+                    <div class="icon">
+                        <img src="img2/icon1.JPG" alt="i">
+                        <p>75mm</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon2.JPG" alt="i">
+                        <p>800kg</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon3.JPG" alt="i">
+                        <p>120+12mm</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <h3>GD-80 평판취부형</h3>
+                    <img src="img2/product9.jpg" alt="p">
+                    <div class="iconbox">
+                    <div class="icon">
+                        <img src="img2/icon1.JPG" alt="i">
+                        <p>63mm</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon2.JPG" alt="i">
+                        <p>550kg</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon3.JPG" alt="i">
+                        <p>103+15mm</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <h3>GD-120 일자취부형</h3>
+                    <img src="img2/product10.jpg" alt="p">
+                    <div class="iconbox">
+                    <div class="icon">
+                        <img src="img2/icon1.JPG" alt="i">
+                        <p>75mm</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon2.JPG" alt="i">
+                        <p>1,000kg</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon3.JPG" alt="i">
+                        <p>120+12mm</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <h3>GD-100 평판취부형</h3>
+                    <img src="img2/product20.jpg" alt="p">
+                    <div class="iconbox">
+                    <div class="icon">
+                        <img src="img2/icon1.JPG" alt="i">
+                        <p>75mm</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon2.JPG" alt="i">
+                        <p>800kg</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon3.JPG" alt="i">
+                        <p>120+12mm</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <h3>GD-100 평판취부형(EU형 평판)</h3>
+                    <img src="img2/product12.jpg" alt="p">
+                    <div class="iconbox">
+                    <div class="icon">
+                        <img src="img2/icon1.JPG" alt="i">
+                        <p>75mm</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon2.JPG" alt="i">
+                        <p>800kg</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon3.JPG" alt="i">
+                        <p>120+12mm</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <h3>GD-100 평판취부형(US형 평판)</h3>
+                    <img src="img2/product13.jpg" alt="p">
+                    <div class="iconbox">
+                    <div class="icon">
+                        <img src="img2/icon1.JPG" alt="i">
+                        <p>75mm</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon2.JPG" alt="i">
+                        <p>800kg</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon3.JPG" alt="i">
+                        <p>120+12mm</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <h3>GD-120 평판취부형</h3>
+                    <img src="img2/product14.jpg" alt="p">
+                    <div class="iconbox">
+                    <div class="icon">
+                        <img src="img2/icon1.JPG" alt="i">
+                        <p>75mm</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon2.JPG" alt="i">
+                        <p>1000kg</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon3.JPG" alt="i">
+                        <p>120+12mm</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <h3>GD-150 평판취부형(EU형 평판)</h3>
+                    <img src="img2/product16.jpg" alt="p">
+                    <div class="iconbox">
+                    <div class="icon">
+                        <img src="img2/icon1.JPG" alt="i">
+                        <p>75mm</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon2.JPG" alt="i">
+                        <p>1,000kg</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon3.JPG" alt="i">
+                        <p>120+12mm</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <h3>GD-100 평판취부형(EU형 평판)</h3>
+                    <img src="img2/product21.jpg" alt="p">
+                    <div class="iconbox">
+                    <div class="icon">
+                        <img src="img2/icon1.JPG" alt="i">
+                        <p>90mm</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon2.JPG" alt="i">
+                        <p>1,500kg</p>
+                    </div>
+                    <div class="icon">
+                        <img src="img2/icon3.JPG" alt="i">
+                        <p>132+15mm</p>
+                    </div>
+                    </div>
+                </div>
+        </section>
+        
+        <footer>
+            <div id="a">
+            <p>
+                충청남도 당진시 송악읍 부곡공단 4길 27-50(구 한진리 408-17) (우)343-823<br>
+                Tel. 041-357-8390 / Fax : 041-357-8395 / E-mail : gdok@gdok.co.kr
+            </p>
+        </div>
+    
+    
+            <div id="b">
+    
+            <img src="img2/footerlogo.jpg" alt="aa">
+            <img src="img2/footerimg.jpg" alt="aa">
+            </div>
+        
+    
+        </footer>
+    </div>
+</body>
+</html>

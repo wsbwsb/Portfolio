@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            font-family: '나눔바른고딕', '맑은고딕';
+        }
+        #clear{
+            clear: both;
+        }
+        #wrap{
+            /* font-family: 'Arial'; */
+        }
+        body{
+            background-color: rgb(226,226,228);
+            background-image: url('img2/subbg1.jpg');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position:0 -50px;
+           
+        }
+        header{
+            /* background-color: rgb(227, 227, 227); */
+            /* background-image: url('img2/topbg2.jpg'); */
+            background-size: 70%;
+            height: 130px;
+            background-repeat: no-repeat;  
+            background-position: right; 
+            /* border-bottom: 1px solid #ccc; */
+        }
+        #name{
+            height: 60px;
+            width: 275px;
+            margin-left: 20px;
+            margin-top: 20px;
+            float: left;
+            background-image: url('img2/logo2.png');
+            background-size: 90%;
+            background-repeat: no-repeat;
+            text-indent: -9999px;
+            
+        }
+        .mainmenu{
+            display: inline-block;
+            margin-left: 30px;
+        }
+        .mainmenu ul li{
+            float: left;
+            margin-right: 25px;
+            margin-top: 30px;
+            text-decoration: none;
+        }
+        .mainmenu ul li a{
+            color: rgb(134, 134, 134);
+            /* font-family: 'Arial'; */
+            font-weight: bold;
+            font-size: 18px;
+            display: inline-block;
+            /* border: 1px solid blue; */
+            width: 90px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+        }
+        .mainmenu ul li a:hover{
+            color: #4d79bb;
+            border-bottom: 2px solid #4d79bb;
+        }
+        .mainmenu ul li:nth-child(3) a{
+            color: #4d79bb;
+            border-bottom: 2px solid #4d79bb;
+        }
+        .submenu{
+            display: inline-block;
+            float: right;
+            margin-right: 30px;
+        }
+        #eng{
+            background-image: url('img2/eng.png');
+            display: inline-block;
+            width: 46px;
+            height: 45px;
+            text-indent: -9999px;
+            background-size: 95%;
+            /* border: 1px solid blue; */
+        }
+        #jpn{
+            background-image: url('img2/jpn.png');
+            display: inline-block;
+            width: 46px;
+            height: 45px;
+            text-indent: -9999px;
+            background-size: 95%;
+        }
+        #chn{
+            background-image: url('img2/chn.png');
+            display: inline-block;
+            width: 46px;
+            height: 45px;
+            text-indent: -9999px;
+            background-size: 95%;
+        }
+        .submenu ul li{
+            float: left;
+            margin-right: 10px;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+        #submenu{
+            float: left;
+            width: 200px;
+            height: 730px;
+            /* background-color: rgba(255,255,255,0.5); */
+            background-color: #fff;
+            margin-left:20px;
+            margin-top: 30px;
+            /* position: fixed; */
+            border-top: 5px solid #4d79bb;
+        }
+        section{
+            width: 950px;
+            margin-left: 250px;
+            margin-top: 30px;
+            /* background-color: rgba(255,255,255,0.5); */
+            background-color: #fff;
+            border-top: 5px solid #4d79bb;
+        }
+        #submenu li{
+            padding: 0 10px;
+        }
+        #submenu h2{
+            padding: 20px 0 10px 20px;
+            /* font-family: 'Arial'; */
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        #submenu li a{
+            color: rgb(134, 134, 134);
+            font-size: 15px;
+            /* font-family: 'Arial'; */
+            font-weight: bold;
+            display: block;
+            padding: 20px 10px;
+            border-bottom: 1px solid #ccc;
+            /* border: 1px solid blue; */
+        }
+        #submenu li:nth-child(9)>a{
+            color: #4d79bb;
+            background-color: rgb(230, 230, 230);
+        }
+       
+        #submenu>ul>li>a:hover{
+            color: #4d79bb;
+            background-color: rgb(230, 230, 230);
+        }
+        #submenu>ul>li:nth-child(9)>ul>li>a:hover{
+            color: #4d79bb;
+        }
+   
+        #custom li{
+            line-height: 0;
+            
+            
+        }
+        #custom li a{
+            font-size: 13px;
+            border-bottom: 1px solid transparent;
+        }
+        #custom li:first-child a{
+            color: #4d79bb;
+        }
+        #box{
+            /* border: 5px solid gray; */
+            padding: 20px;
+            color: rgb(134, 134, 134);
+            font-family: 'Arial';
+            font-size: 14px;
+            line-height: 25px;
+            
+        }
+        #box h2{
+            color: black;
+            padding: 10px 0;
+            font-size: 23px;
+        }
+        #caster{
+            margin-top: 23px;
+            background-color: #fff;
+            width: 950px;
+            height: 1500px;
+        }
+  
+        #caster li{
+        float: left;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        margin-right: 10px;
+        box-shadow: 3px 3px 10px #ccc;
+        position: relative;
+        border-radius: 5px;
+        padding-bottom: 10px;
+    }
+    #caster ul li img{
+        width: 260px;
+        height: 270px;
+        transition: all 0.5s;
+        
+    }
+    #caster ul li img:hover{
+        cursor: pointer;
+    }
+    #caster h4{
+        padding: 8px 0;
+    }
+   .right h4{
+        text-align: center;
+        color: rgb(134, 134, 134);
+            /* font-family: 'Arial'; */
+            font-size: 16px;
+
+    }
+    .right p{
+        padding-left: 20px;
+        font-size: 13px;
+        color: rgb(134, 134, 134);
+            /* font-family: 'Arial'; */
+        
+    }
+    footer{
+            margin-top: 50px;
+            height: 100px;
+            /* display: inline-block;  */
+            /* text-align: center; */
+            
+          
+        }
+        footer #a p{
+            color: rgb(94, 94, 94);
+            font-size: 12px;   
+            float: left;
+            padding-left: 300px;
+        }
+        footer #b img{
+            width: 150px;
+            height: 45px;
+            float: right;
+            /* margin-top: -25px; */
+            margin-right: 10px;
+        }
+    
+        #b{
+            /* border: 1px solid red; */
+            width: 330px;
+            height: 100px;
+            margin-left: 710px;
+        }
+        select{
+            width: 100px;
+            height: 25px;
+            float: left;
+            margin-right: 10px;
+        }
+        #search{
+            width: 100px;
+            height: 25px;
+            background-color: #4d79bb;
+            float: left;
+            
+        }
+        #search a{
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            line-height: 25px;
+
+        }
+        #search a:hover{
+            color: blue;
+        }
+        #searchbar{
+            float: right;
+            margin-top: 10px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div id="background"></div>
+            <a href="footmaster.html" id="name">logo</a>
+            <div class="mainmenu">
+                <ul>
+                    <li><a href="aboutus.html">회사소개</a></li>
+                    <li><a href="products.html">제품소개</a></li>
+                    <li><a href="customer.html">주문제작</a></li>
+                    <li><a href="service.html">고객센터</a></li>
+                </ul>
+            </div>
+            <div class="submenu">
+                <ul>
+                    <li><a href="#" id="eng">ENG</a></li>
+                    <li><a href="#" id="jpn">JPN</a></li>
+                    <li><a href="#" id="chn">CHN</a></li>
+                </ul>
+            </div>
+        </header>
+        <nav id="submenu">
+            <h2>제품소개</h2>
+            <ul>
+                <li><a href="#">높낮이조절캐스터</a></li>
+                <li><a href="#">충격흡수식캐스터</a></li>
+                <li><a href="#">AGV캐스터</a></li>
+                <li><a href="#">경하중캐스터</a></li>
+                <li><a href="#">고하중캐스터</a></li>
+                <li><a href="#">조절자</a></li>
+                <li><a href="#">대차</a></li>
+                <li><a href="#">바퀴/롤러</a></li>
+                <li><a href="#">주문제작</a>
+                    <div class="clear"></div>
+                    <ul id="custom">
+                        <li><a href="#">캐스터</a></li>
+                        <li><a href="#">바퀴류 TDI</a></li>
+                        <li><a href="#">바퀴류 PPDI/NDI</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </nav>
+        <section>
+            <article>
+                <div id="searchbar">
+                <select name="first" id="first">
+                    <option>℃/mm/kg</option>
+                    <option>℉/＂/lsb</option>
+                </select>
+                <select name="capa" id="second">
+                    <option value="" selected>허용하중</option>
+                    <option value="250">0 ~ 250 kg</option>
+                    <option value="500">250 ~ 500 kg</option>
+                    <option value="1000">500 ~ 1,000 kg</option>
+                    <option value="1500">1,000 ~ 1,500 kg</option>
+                    <option value="2000">1,500 ~ 2,000 kg</option>
+                    <option value="3000">2,000 ~ 3,000 kg</option>
+                    <option value="4000">3,000 ~ 4,000 kg</option>
+                    <option value="6000">4,000 ~ 6,000 kg</option>
+                    <option value="8000">6,000 ~ 8,000 kg</option>
+                    <option value="10000">10 ton</option>
+                    <option value="20000">20 ton</option>
+                  </select>
+            
+                  <select name="diam" id="third">
+                    <option value="" selected>바퀴외경</option>
+                    <option value="100">100 mm 이하</option>
+                    <option value="130">100 ~ 130 mm</option>
+                    <option value="150">130 ~ 150 mm</option>
+                    <option value="200">150 ~ 200 mm</option>
+                    <option value="250">200 mm 이상</option>
+                    </select>
+            
+                    <div id="search">
+                        <a href="#">SEARCH</a>
+                    </div>
+                </div>
+                <div id="box">
+                    <h2>캐스터</h2>
+                    <p>
+                        당사의 주문형 캐스터는 엄격한 CLEAN CLASS가 요구되는 국내외 유수기업의 최첨단 라인데 적용되어 그 우수성이
+                        입증된 제품이며 20여년간의 기술력을 바탕으로 고객의 어떤 요구조건에도 최상의  Solution을 제공해 드리고 있습니다.
+                    </p><br>
+                    <h4>활용범위</h4>
+                    <p>º 반도체라인 및 LCD라인등 최첨단 전자산업의 문인반송차 캐스터<br>
+                       º 가혹한 조건에서 운행되는 각종 물류장비(AGV, LGV, RGV 등)<br>
+                       º 조선/중공업 및 제철산업의 초고하중 장비용 캐스터<br>
+                       º 기타 특수 기능을 요하는 장비 및 대차용 캐스터</p>
+                        
+                </div>
+                <div id="caster">
+                    <ul>
+                        <li>
+                            <img src="img2/p1.JPG" width="250" alt="aa">
+                            <div class="right">
+                            <h4>TURTLE 캐스터</h4>
+                            <p>
+                                ▷ 허용하중 : 2,000kg<br>
+                                ▷ 제품설명 : 도비용 캐스터
+                            </p>
+                        </div>
+
+                        </li>
+                        <li>
+                            <img src="img2/p2.JPG" width="250" alt="aa">
+                            <div class="right">
+                            <h4>AGV 캐스터</h4>
+                            <p>
+                                ▷ 허용하중 : 600kg<br>
+                                ▷ 제품설명 : AGV/LGV 장비
+                            </p>
+                        </div>
+
+                        </li>
+                        <li>
+                            <img src="img2/p3.JPG" width="250" alt="aa">
+                            <div class="right">
+                            <h4>TURTLE 캐스터</h4>
+                            <p>
+                                ▷ 허용하중 : 500kg<br>
+                                ▷ 제품설명 : AGV 장비
+                            </p>
+                        </div>
+
+                        </li>
+                        <li>
+                            <img src="img2/p4.JPG" width="250" alt="aa">
+                            <div class="right">
+                            <h4>고하중 SCRAPER 캐스터</h4>
+                            <p>
+                                ▷ 허용하중 : 2,700kg<br>
+                                ▷ 제품설명 : 세이프티 대차
+                            </p>
+                        </div>
+
+                        </li>
+                        <li>
+                            <img src="img2/p5.JPG" width="250" alt="aa">
+                            <div class="right">
+                            <h4>고하중 고정형 캐스터</h4>
+                            <p>
+                                ▷ 허용하중 : 1,500kg<br>
+                                ▷ 제품설명 : 고하중 고정형 캐스터
+                            </p>
+                        </div>
+
+                        </li>
+                        <li>
+                            <img src="img2/p6.JPG" width="250" alt="aa">
+                            <div class="right">
+                            <h4>충격흡수식 캐스터(G/R STEM)</h4>
+                            <p>
+                                ▷ 허용하중 : 100kg<br>
+                                ▷ 제품설명 : 충격흡수식 캐스터
+                            </p>
+                        </div>
+
+                        </li>
+                        <li>
+                            <img src="img2/p7.JPG" width="250" alt="aa">
+                            <div class="right">
+                            <h4>AGV 캐스터</h4>
+                            <p>
+                                ▷ 허용하중 : 4,500kg<br>
+                                ▷ 제품설명 : AGV 장비
+                            </p>
+                        </div>
+
+                        </li>
+                        <li>
+                            <img src="img2/p8.JPG" width="250" alt="aa">
+                            <div class="right">
+                            <h4>고하중 V앵글 캐스터</h4>
+                            <p>
+                                ▷ 허용하중 : 1,000kg<br>
+                                ▷ 제품설명 : 항공용 시뮬레이터 등
+                            </p>
+                        </div>
+
+                        </li>
+                        <li>
+                            <img src="img2/p9.JPG" width="250" alt="aa">
+                            <div class="right">
+                            <h4>특수목적 캐스터(OFFSET 0)</h4>
+                            <p>
+                                ▷ 허용하중 : 400kg<br>
+                                ▷ 제품설명 : 수직형 회전캐스터
+                            </p>
+                        </div>
+
+                        </li>
+                        <li>
+                            <img src="img2/p10.JPG" width="250" alt="aa">
+                            <div class="right">
+                            <h4>초고하중 캐스터</h4>
+                            <p>
+                                ▷ 허용하중 : 7,000kg<br>
+                                ▷ 제품설명 : Container 이동장비
+                            </p>
+                        </div>
+
+                        </li>
+                        <li>
+                            <img src="img2/p11.JPG" width="250" alt="aa">
+                            <div class="right">
+                            <h4>고온용 충격 흡수식 캐스터</h4>
+                            <p>
+                                ▷ 허용하중 : 100kg<br>
+                                ▷ 제품설명 : 반도체 고온공정 대차
+                            </p>
+                        </div>
+
+                        </li>
+                        <li>
+                            <img src="img2/p12.JPG" width="250" alt="aa">
+                            <div class="right">
+                            <h4>저상 중하중 캐스터</h4>
+                            <p>
+                                ▷ 허용하중 : 700kg<br>
+                                ▷ 제품설명 : 골리앗 크레인 회전설비
+                            </p>
+                        </div>
+
+                        </li>
+                    </ul>
+
+                </div>
+     
+        </section>
+        <footer>
+            <div id="a">
+            <p>
+                충청남도 당진시 송악읍 부곡공단 4길 27-50(구 한진리 408-17) (우)343-823<br>
+                Tel. 041-357-8390 / Fax : 041-357-8395 / E-mail : gdok@gdok.co.kr
+            </p>
+        </div>
+    
+    
+            <div id="b">
+    
+            <img src="img2/footerlogo.jpg" alt="aa">
+            <img src="img2/footerimg.jpg" alt="aa">
+            </div>
+        
+    
+        </footer>
+    </div>
+</body>
+</html>
