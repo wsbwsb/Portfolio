@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원소빈의 블로그-Contact</title>
+    <link rel="stylesheet" href="blog_contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="blog_contact.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div id="headerbox">
+            <ul id="topnav">
+                <li><a href="blog.html">블로그</a></li>
+                <li><a href="blog_photo.html">photo</a></li>
+            </ul>
+            <div id="profile">
+                <img src="blog/icon.png" alt="icon">
+                <span><b>럭셜쏘빈</b>(thqls94)</span>
+                <p>사진을 좋아하는 완벽주의자</p>
+                <div>
+                    <a href="#">
+                        프로필
+                        <img src="blog/smallnext.png" alt="more">
+                    </a>
+                    <a href="#">
+                        쪽지
+                        <img src="blog/smallnext.png" alt="more">
+                    </a>
+                </div>
+                <a href="#" id="add">
+                    <span>╉</span> 이웃추가
+                </a>
+            </div>
+            <div id="category">
+                <h3>
+                    카테고리
+                    <img src="blog/hidebtn.png" alt="hide">
+                </h3>
+                <div id="line"></div>
+                <ul id="mainlist">
+                    <li><a href="blog.html">
+                        <img src="blog/list.png" alt="list">
+                        portfolio (8)
+                    </a></li>
+                    <li><a href="#">
+                        <img src="blog/list.png" alt="list">
+                        contact (1)
+                    </a></li>
+                    <li><a href="blog_photo.html">
+                        <img src="blog/photo.png" alt="list">
+                        photo (10)
+                    </a></li>
+                </ul>
+                <ul id="information">
+                    <h3>활동정보</h3>
+                    <li>
+                        블로그 이웃 <span>59</span> 명
+                    </li>
+                    <li>
+                        글 보내기 <span>0</span> 회
+                    </li>
+                    <li>
+                        글 스크랩 <span>8</span> 회
+                    </li>
+                </ul>
+                <a href="#" id="item">사용중인 아이템 보기</a>
+            </div>
+            <div id="banner">
+                <img src="blog/banner.png" alt="banner">
+                <div id="search">
+                    <input type="text">
+                    <img src="blog/search.png" alt="icon">
+                </div>
+            </div>
+            </div>
+        </header>
+        <div id="container">
+            <ul id="loginbar">
+                <li><a href="blog.html">내 블로그</a></li>
+                <li><a href="#">이웃블로그</a></li>
+                <li><a href="#">블로그 홈</a></li>
+                <li><a href="#" id="login">로그인</a></li>
+                <li>
+                    <a href="#" id="nemo">
+                        <img src="blog/nemo.png" alt="img">
+                    </a><br>
+                </li>
+            </ul>
+            <br>
+            <a href="#" id="guest">안부</a>
+            <h1>안녕하세요! 원소빈입니다.</h1>
+        <div id="mainbox">
+            <ul id="postlist">
+                <li>
+                    <span>contact</span> 1개의 글
+                </li>
+                <li><a href="#" id="list">목록열기</a></li>
+            </ul>
+            <ul id="postlist2">
+                <li>
+                    <ul>
+                        <li>글 제목</li>
+                        <li>작성일</li>
+                    </ul>
+                </li>
+                <li><a href="#">
+                    <ul>
+                        <li class="black">연락을 기다리고 있습니다.</li>
+                        <li>2020.07.30.</li>
+                    </ul>
+                </a></li>
+            </ul>
+            <div id="postbox">
+                <p>contact</p>
+                <h2>연락을 기다리고 있습니다.</h2>
+                <div id="title">
+                    <ul id="sob">
+                        <li>
+                            <img src="blog/icon.png" alt="icon">
+                        </li>
+                        <li>럭셜쏘빈</li>
+                        <li>11분 전</li>
+                    </ul>
+                    <ul id="setting">
+                        <li><a href="#">URL 복사</a></li>
+                        <li><a href="#">+이웃추가</a></li>
+                        <li><a href="#"><img src="blog/setting.png" alt="setting"></a></li>
+                    </ul>
+                </div>
+                <div id="post">
+                    <h3>어쩌구저쩌구</h3>
+                    <form action="https://formspree.io/moqkblpd" method="POST">
+                        <div>
+                            <label>
+                                <span>Name :</span>
+                            <input type="text" name="name" id="name">
+                            </label>
+                            <label>
+                                <span>E-mail :</span>
+                            <input type="text" name="_replyto" id="email">
+                            </label><br>
+                            <label>
+                                <p>Message</p>
+                                <textarea name="message"></textarea>
+                            </label>
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+        <a href="#loginbar" id="topbtn">
+            <img src="blog/top.png" alt="btn">
+        </a>
+        </div>
+    </div>
+</body>
+</html>

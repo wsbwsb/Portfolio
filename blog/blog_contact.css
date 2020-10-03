@@ -1,0 +1,373 @@
+:root {
+  --black: #333333;
+  --gray: #666666;
+  --gray-1: #999999;
+  --gray-2: #b8b7b7;
+}
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+#wrap {
+  width: 100%;
+}
+header {
+  width: 27%;
+  height: 1300px;
+  background-color: #dfe9ee;
+  float: left;
+}
+#headerbox {
+  /* border: 1px solid red; */
+  width: 170px;
+  float: right;
+  margin-top: 50px;
+  margin-right: 10px;
+}
+#topnav {
+  display: flex;
+  margin-bottom: 300px;
+}
+#topnav li a {
+  display: inline-block;
+  padding: 0px 5px;
+  font-size: 13px;
+}
+#topnav li:first-child a {
+  color: var(--black);
+  font-weight: bolder;
+  border-right: 1px solid #ccc;
+}
+#topnav li:last-child a {
+  color: var(--gray-1);
+  font-weight: bold;
+}
+#profile span {
+  font-size: 14px;
+}
+#profile p {
+  font-size: 13px;
+  padding: 10px 0;
+  letter-spacing: -1px;
+}
+#profile > div a {
+  font-size: 12px;
+  color: var(--gray);
+  letter-spacing: -1px;
+}
+#profile #add {
+  display: inline-block;
+  padding: 10px 40px;
+  background-color: #fff;
+  font-size: 13px;
+  color: rgb(66, 65, 65);
+  font-weight: bold;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+}
+#add span {
+  color: rgb(93, 212, 23);
+  font-size: 11px;
+}
+#category {
+  margin-top: 45px;
+}
+#category h3 {
+  font-size: 14px;
+  position: relative;
+}
+#category h3 img {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+#category #line {
+  display: inline-block;
+  width: 100px;
+  border-bottom: 1px dotted rgb(163, 162, 162);
+}
+#category #mainlist {
+  font-size: 13px;
+  margin: 10px 0;
+}
+#mainlist li {
+  padding: 3px 0;
+}
+#mainlist li:nth-child(2) {
+  text-decoration: underline;
+}
+#mainlist li a {
+  color: var(--black);
+}
+#information {
+  margin-top: 45px;
+  border-bottom: 1px dotted rgb(165, 164, 164);
+  padding-bottom: 10px;
+}
+#information h3 {
+  margin-bottom: 10px;
+}
+#information li {
+  font-size: 13px;
+  color: var(--gray);
+  padding: 0.5px 0;
+}
+#information li span {
+  font-weight: bold;
+  color: rgb(100, 99, 99);
+}
+#item {
+  font-size: 13px;
+  color: var(--black);
+  display: inline-block;
+  margin-bottom: 40px;
+}
+#banner #search input {
+  height: 30px;
+  border: 1px solid #ccc;
+  outline: transparent;
+}
+#search {
+  position: relative;
+}
+#banner #search img {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  width: 28px;
+}
+#container {
+  width: 790px;
+  height: 1300px;
+  /* border: 1px solid red; */
+  float: left;
+  position: relative;
+}
+#container #loginbar {
+  display: flex;
+  float: right;
+  margin-top: 5px;
+}
+#loginbar li a {
+  font-size: 13px;
+  color: var(--gray-1);
+  display: inline-block;
+  padding: 0 7px;
+  letter-spacing: -2px;
+  border-right: 1px solid #ccc;
+}
+#loginbar #nemo img {
+  width: 20px;
+  padding-top: 2px;
+}
+#loginbar li:last-child a {
+  border-right: none;
+}
+#container > a {
+  font-size: 13px;
+  color: var(--gray-1);
+}
+#container #login {
+  display: inline-block;
+  padding: 1px 3px;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  margin-left: 5px;
+  color: var(--black);
+}
+#guest {
+  clear: both;
+  float: right;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+#container > h1 {
+  clear: both;
+  float: right;
+  margin: 140px 0;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 28px;
+  margin-right: 5px;
+  width: 325px;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+#mainbox {
+  clear: both;
+}
+#postlist {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  font-size: 13px;
+}
+#postlist li {
+  color: var(--gray-1);
+}
+#postlist li span {
+  color: var(--gray);
+  font-weight: bold;
+}
+#postlist li a {
+  color: var(--gray-1);
+}
+#postlist2 {
+  width: 740px;
+  margin: 0 auto;
+}
+#postlist2 > li {
+  height: 35px;
+  border-bottom: 1px solid rgb(233, 233, 233);
+  line-height: 35px;
+}
+#postlist2 li ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+#postlist2 .black {
+  color: var(--gray);
+}
+#postlist2 .black:hover {
+  font-weight: bold;
+}
+#postlist2 li ul li:last-child {
+  color: var(--gray-2);
+}
+#postlist2 > li:first-child {
+  height: 35px;
+  line-height: 35px;
+  color: var(--gray-2);
+  border-bottom: 1px solid rgb(168, 168, 168);
+  margin-top: 10px;
+}
+#postlist2 > li:first-child li {
+  font-size: 12px;
+}
+#postbox {
+  /* border: 1px solid blue; */
+  width: 710px;
+  margin: 0 auto;
+  margin-top: 75px;
+}
+#postbox > p {
+  color: var(--gray-2);
+  font-size: 15px;
+}
+#postbox > h2 {
+  font-weight: 600;
+  font-family: 'Nanum Gothic', sans-serif;
+  margin: 30px 0;
+  color: var(--black);
+}
+#title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(221, 221, 221);
+  height: 45px;
+}
+#title li {
+  font-size: 14px;
+  float: left;
+}
+#sob li {
+  margin-right: 8px;
+}
+#setting li a {
+  color: var(--gray-2);
+  display: inline-block;
+  margin-right: 10px;
+  line-height: 28px;
+  letter-spacing: -1px;
+}
+#setting li:nth-child(2) a {
+  color: var(--black);
+  border: 1px solid var(--black);
+  font-size: 13px;
+  padding: 0 5px;
+  margin-right: 3px;
+}
+#setting li:last-child a {
+  margin-right: 0;
+}
+#title li:last-child {
+  color: var(--gray-2);
+}
+#post {
+  margin-top: 40px;
+}
+#post h3 {
+  margin: 20px 0;
+  font-weight: normal;
+  font-size: 15px;
+  color: var(--gray);
+}
+form {
+  width: 700px;
+  height: 300px;
+  background-color: #eee;
+  font-size: 15px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+form > div {
+  width: 550px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+form p {
+  margin-bottom: 8px;
+}
+form input,
+textarea {
+  border: 1px solid #ccc;
+  outline: none;
+}
+form input {
+  height: 30px;
+}
+#name {
+  margin-right: 15px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+#email {
+  width: 238px;
+}
+textarea {
+  width: 100%;
+  height: 100px;
+}
+form button {
+  float: right;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 10px 80px;
+  margin-top: 10px;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+button:hover {
+  background-color: #ccc;
+  color: #fff;
+}
+#topbtn {
+  position: absolute;
+  bottom: 50px;
+  right: 0px;
+}

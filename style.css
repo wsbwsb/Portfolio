@@ -1,0 +1,300 @@
+/*root*/
+:root {
+    --main: #5c93c4;
+    --main2: #bedafa;
+    --white: #f8f7f2;
+}
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgb(58, 57, 61);
+}
+body {
+    width: 100%;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* nav */
+#nav {
+    width: 17rem;
+    height: 100vh;
+    background-color: var(--main);
+    position: fixed;
+    z-index: 10;
+}
+#nav .me {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    border: 0.4rem solid var(--main2);
+    margin: 0 auto;
+    margin-top: 250px;
+    background: url('img/sobin.JPG') no-repeat;
+    background-size: 100%;
+    background-position: 0 -50px;
+}
+
+/* dot */
+#dot {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+#dot li a {
+    color: var(--main2);
+    font-weight: 500;
+    font-size: 1.1rem;
+    display: block;
+    margin: 20px 0;
+}
+#dot li.active a {
+    color: var(--white);
+}
+
+/* contents */
+#contents > div {
+    margin-left: 17rem;
+    padding-left: 50px;
+    height: 100vh;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+#contents > div > h2 {
+    font-size: 3.5rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* section */
+#section1 h1 {
+    font-size: 5.3rem;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 280px;
+}
+#section1 > h1 > span {
+    font-family: 'Oswald', sans-serif;
+    color: var(--main);
+}
+#section1 h3 {
+    font-weight: 400;
+    margin-top: 40px;
+    font-size: 1.3rem;
+}
+#section1 p {
+    margin-top: 10px;
+    width: 850px;
+    line-height: 1.8rem;
+    color: rgb(100, 100, 100);
+    font-weight: 300;
+}
+#section1 .sns {
+    display: flex;
+    margin-top: 40px;
+}
+#section1 .sns li {
+    margin-right: 30px;
+}
+#section1 .sns li a {
+    display: inline-block;
+    width: 3.1rem;
+    height: 3.1rem;
+    border-radius: 50%;
+    background-color: rgb(77, 77, 80);
+    text-align: center;
+    transition: all 0.3s;
+}
+#section1 .sns li i {
+    font-size: 1.5rem;
+    color: var(--white);
+    line-height: 3.1rem;
+}
+#section1 .sns li a:hover {
+    background-color: var(--main);
+}
+
+#section2 {
+    position: relative;
+}
+#section2 h2 {
+    padding-top: 300px;
+}
+#section2 h3 {
+    margin-top: 50px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+#section2 h4 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-top: 3px;
+}
+#section2 span {
+    position: absolute;
+    top: 27.5rem;
+    right: 38rem;
+    font-size: 1.1rem;
+    color: var(--main);
+}
+#section2 a {
+    display: inline-block;
+    font-size: 0.9rem;
+    margin-top: 15px;
+    color: rgb(105, 105, 105);
+    font-weight: 300;
+}
+#section2 a:hover {
+    /* font-weight: bold; */
+    color: var(--main);
+}
+
+#section3 {
+    padding-top: 80px;
+}
+#section3 ul {
+    margin-top: 30px;
+}
+#section3 ul li {
+    float: left;
+    width: 158px;
+    margin-right: 25px;
+}
+#section3 ul li .text h3 {
+    font-size: 1.08rem;
+    font-weight: 500;
+}
+#section3 ul li .text p {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+#section3 ul li a:hover .text h3 {
+    color: var(--main);
+}
+#section3 ul li img {
+    transition: all 0.3s;
+    opacity: 1;
+}
+#section3 ul li a:hover img {
+    opacity: 0.5;
+}
+#section3 ul li .text {
+    padding-bottom: 15px;
+}
+#section3 ul li:nth-child(8) {
+    margin-right: 0;
+}
+#section3 ul li:nth-child(16) {
+    margin-right: 0;
+}
+
+#section4 {
+    padding-top: 100px;
+}
+#section4 .list {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+#section4 .list h3 {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+#section4 .practice-list li {
+    margin: 10px 0;
+}
+#section4 .practice-list li a {
+    transition: all 0.2s;
+    font-size: 0.95rem;
+    font-weight: 300;
+}
+#section4 .practice-list li:hover a {
+    color: var(--main);
+    text-decoration: underline;
+}
+#section4 .practice-list li span {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--main);
+    margin-bottom: 3px;
+    margin-right: 10px;
+}
+#section4 .php-list li {
+    width: 250px;
+    float: left;
+}
+#section4 .php-list li img {
+    display: block;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+#section4 .php-list li a {
+    transition: all 0.2s;
+    font-size: 0.95rem;
+    font-weight: 300;
+}
+#section4 .php-list li a:hover {
+    color: var(--main);
+}
+
+#section6 {
+    position: relative;
+}
+#section6 h2 {
+    padding-top: 300px;
+    margin-bottom: 100px;
+}
+#section6 p,
+#section6 span {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+#section6 .ment {
+    font-size: 2rem;
+    letter-spacing: -0.5px;
+    margin-bottom: 20px;
+}
+#section6 a {
+    display: inline-block;
+    margin-bottom: 5px;
+    transition: all 0.2s;
+    letter-spacing: 1px;
+}
+#section6 a:hover {
+    color: var(--main);
+}
+#section6 .copy {
+    font-size: 0.75rem;
+    color: rgb(100, 100, 100);
+    font-weight: 100;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 40px;
+}
+
+/*텍스트 애니메이션*/
+#section1 > h1 {
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+    transform: translate(-40%, 0);
+}
+#section1.show > h1 {
+    transform: none;
+    opacity: 1;
+}
+#contents > div > h2 {
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+    transform: translate(-20%, 0);
+}
+#contents > div.show > h2 {
+    transform: none;
+    opacity: 1;
+}
