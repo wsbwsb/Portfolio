@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+header a {
+    display: block;
+    width: 280px;
+    height: 50px;
+    background-image: url('img/logo.png');
+    text-indent: -9999px;
+    position: relative;
+    top: 30px;
+    left: 140px;
+}
+header {
+    height: 440px;
+    background-color: #b1c9df;
+    background-image: url('img/header-bg.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.bar {
+    height: 110px;
+    background-image: url('img/movie-scroll.png');
+    margin-bottom: 80px;
+}
+body {
+    background-color: rgb(75, 78, 67);
+}
+article {
+    width: 990px;
+    margin: 0 auto;
+}
+.movie {
+    width: 300px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background-color: rgb(34, 35, 30);
+}
+.movie h3 {
+    color: rgb(165, 153, 139);
+    font-size: 22px;
+    font-weight: 600;
+    padding: 10px;
+}
+.movie p {
+    color: rgb(165, 153, 139);
+    font-size: 14px;
+    padding: 0 0 15px 10px;
+    text-align: center;
+}
+.movie .button {
+    margin-left: 70px;
+    margin-top: 10px;
+    border-top: 1px solid rgb(165, 153, 139);
+}
+.movie:hover {
+    background-color: rgb(201, 42, 42);
+    transform: translateY(-30px);
+    transition-duration: 1s;
+}
+/* .button:hover{
+    background-color: rgb(17, 17, 17);
+} */
+.movie ul {
+    width: 150px;
+    margin: 0 auto;
+    border-top: 1px solid rgb(165, 153, 139);
+}
+.movie ul li {
+    float: left;
+    width: 50px;
+    display: inline-block;
+}
+.movie ul li a {
+    display: inline-block;
+    background-image: url('img/sprite-btn.png');
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+}
+.bb {
+    background-position: -50px 0;
+}
+.cc {
+    background-position: -100px 0;
+}
+.movie ul li a:hover {
+    background-color: rgb(34, 35, 30);
+}

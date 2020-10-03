@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'bbb';
+            src: url('타이포 부암동2019.ttf');
+            font-family: "hhh";
+            src: url('배달의민족 한나.ttf')
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #wrap{
+            width: 100%;
+            height: 2800px;
+            margin: 0 auto;
+            background-color: #473a33;
+        }
+        header{
+            width: 95%;
+            height: 200px;
+            background: url('headerbg.png') no-repeat center;
+            background-size: 80% 90%;
+            background-color: #473a33;
+            margin: 0 auto;
+        }
+        #logo{
+            display: inline-block;
+            width: 90px;
+            height: 80px;
+            background-image: url('logo111.png');
+            background-repeat: no-repeat;
+            background-size: 80%;
+            text-indent: -9999px;
+            position: absolute;
+            top: 65px;
+            left: 750px;
+        }
+        header h1{
+            color: #e8e7e8;
+            font-family: '타이포_부암동2019';
+            font-size: 50px;
+            display: inline-block;
+            position: absolute;
+            top: 70px;
+            left: 850px;
+        }
+        nav{
+            width: 100%;
+            height: 75px;
+        }
+        nav>ul{
+            width: 100%;
+            height: 60px;
+            background-color:#e8e7e8;
+            border-top: 6px solid #8d7d74;
+            border-bottom: 6px solid #8d7d74;
+            margin: 0 auto;
+        }
+        nav>ul>li{
+            float: left;
+            list-style: none;
+        }
+        nav>ul>li:first-child{
+            margin-left: 500px;
+        }
+        nav>ul>li>a{
+            color:#473a33;
+            font-family: '배달의민족 한나';
+            text-decoration: none;
+            font-size: 20px;
+            display: inline-block;
+            padding: 0 40px;
+            line-height: 65px;
+        }
+        nav>ul>li>a:hover{
+            color:#8d7d74;
+        }
+        #subnav{
+            width: 100%;
+            background-color: #e8e7e8;
+            height: 180px;
+            position: absolute;
+            z-index: 10;
+            display: none;
+        }
+        nav:hover ul+#subnav{
+            display: block;
+        }
+        .submenu{
+            float: left;
+            list-style: none;
+            text-align: center;
+        }
+        .first{
+            margin-left: 500px;
+            padding: 0 20px;
+        }
+        .move1{
+            padding: 0 17px;
+        }
+        .move2{
+            padding: 0 36px;
+        }
+        .move3{
+            padding: 0 34px;
+        }
+        .move4{
+            padding: 0 58px;
+        }
+        .submenu{
+            padding-top: 10px;
+        }
+        .submenu a{
+            text-decoration: none;
+            color: #473a33;
+            font-family: '배달의민족 한나';
+            font-size: 17px;
+            display: inline-block;
+            padding: 5px 0;
+        }
+        .submenu a:hover{
+            color:#8d7d74;
+        }
+        #mainimg .img1{
+            width:95%;
+            padding-top: 40px;
+            display: block;
+            margin: 0 auto;
+        }
+        #mainimg .img2{
+            width: 7%;
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            bottom: 30px;
+        }
+        #middle{
+            width: 54%;
+            height: 700px;
+            margin: 0 auto;
+        }
+        #middle .middlebox{
+            width: 400px;
+            height: 500px;
+            float: left;
+            background-color: #e8e7e8;
+            padding: 40px 30px;
+            border: 6px solid #8d7d74;
+            margin-top: 70px;
+            transition: all 1s;
+        }
+        .middlebox:hover{
+            transform: scale(1.05);
+        }
+        .box:nth-child(1){
+            margin-right: 70px;
+        }
+        .box h3{
+            font-size: 20px;
+        }
+        .box h2{
+            font-size: 30px;
+        }
+        .box p{
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+        .middlebox h2{
+            font-family: '배달의민족 한나';
+            color: rgb(53, 53, 53);
+            padding: 15px 0;
+        }
+        .middlebox p{
+            font-family: '배달의민족 한나';
+            color: #473a33;
+        }
+        .middlebox h3{
+            font-family: '배달의민족 한나';
+            color: #b31820;
+        }
+        #successImg .img1{
+            float: left;
+            width: 45%;
+            margin-right: 10px;
+        }
+        #successImg .img2, .img3{
+            float: right;
+            width: 52%;
+            height: 123px;
+        }
+        .img2{
+            margin-bottom: 10px;
+        }
+        .middlebox a{
+            clear: both;
+            display: block;
+            text-decoration: none;
+            background-color: #473a33;
+            color: #fff;
+            font-family: '배달의민족 한나';
+            width: 80px;
+            height: 20px;
+            text-align: center;
+            padding: 10px;
+            line-height: 20px;
+            margin-top: 290px;
+            margin-left: 150px;
+        }
+        .box1{
+            background: url('bank.png') no-repeat  center;
+            background-size: 95%;
+            text-align: center;
+        }
+        .box1 h2{
+            font-size: 34px;
+            color: #b31820;
+        }
+        .box1 h3{
+            font-size: 23px;
+            color: rgb(53, 53, 53);
+        }
+        .box1 p{
+            font-size: 18px;
+            line-height: 22px;
+        }
+        .pp{
+            margin-bottom: 10px;
+        }
+        .box1 a{
+            font-weight: normal;
+            margin-top: 265px;
+        }
+        .middlebox a:hover{
+            background-color: #8d7d74;
+        }
+        #coffeemenu{
+            clear: both;
+            width: 100%;
+            height: 380px;
+            margin-top: 70px;
+            background: url('menubg.png') no-repeat;
+            background-size: 100%;
+        }
+        #coffeemenu h2{
+            color: #2e2621;
+            font-family: 'hhh';
+            font-size: 39px;
+            font-weight: bolder;
+            padding: 100px 0 15px 0;
+            text-align: center;
+        }
+        #coffeemenu p{
+            font-family: '배달의민족 한나';
+            font-size: 23px;
+            color: #473a33;
+            text-align: center;
+        }
+        #sns{
+            width: 350px;
+            margin: 90px auto;
+            text-align: center;
+        }
+        #sns h2{
+            color: #fff;
+            padding: 10px;
+            font-size: 25px;
+        }
+        #sns p{
+            color: #8a8a8a;
+            font-size: 14px;
+            padding-bottom: 20px;
+        }
+        #snsimg img{
+            margin: 0 5px;
+        }
+        footer{
+            width: 100%;
+            background-color: #2e2621;
+            height: 160px;
+            border-top: 1px dotted #ccc;
+        }
+        footer>img{
+            float: left;
+            margin: 30px 20px 0 30px;
+        }
+        footer p{
+            float: left;
+            color: #e8e7e8;
+            font-size: 12px;
+            font-weight: normal;
+            margin: 50px 0 0 20px;
+            line-height: 20px;
+        }
+        footer .banner{
+            float: right;
+            margin: 60px 40px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+    <header>
+        <div class="logobox">
+        <a href="#" id="logo">logo</a>
+        <h1>오뚜기커피</h1>
+        </div>
+    </header>
+    <nav>
+        
+        <ul>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">소식</a></li>
+            <li><a href="#">매장안내</a></li>
+            <li><a href="#">창업문의</a></li>
+            <li><a href="#">고객문의</a></li>
+        </ul>
+        <div id="subnav">
+            <ul class="submenu first">
+                <li><a href="#">CEO인사말</a></li>
+                <li><a href="#">브랜드소개</a></li>
+                <li><a href="#">오뚜기커피 이야기</a></li>
+            </ul>
+            <ul class="submenu move1">
+                <li><a href="#">신메뉴</a></li>
+                <li><a href="#">커피</a></li>
+                <li><a href="#">음료</a></li>
+                <li><a href="#">버블&쥬스</a></li>
+                <li><a href="#">디저트</a></li>
+            </ul>
+            <ul class="submenu move2">
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">뉴스</a></li>
+                <li><a href="#">우수매장</a></li>
+            </ul>
+            <ul class="submenu move3">
+                <li><a href="#">매장찾기</a></li>
+            </ul>
+            <ul class="submenu move4">
+                <li><a href="#">창업절차</a></li>
+                <li><a href="#">인테리어</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div id="mainimg">
+            <img src="bubble.jpg" alt="main" class="img1">
+            <img src="dot.png" alt="dot" class="img2">
+        </div>
+        <div id="middle">
+            <div class="middlebox box">
+                <h3>안서대학로점</h3>
+                <h2>오뚜기커피 브랜드로 바꾸고 매출도 확 바뀌었습니다.</h2>
+                <p>
+                    원래 타 브랜드 (T카페) 를 운영 했었어요. 카페가 조금 지겨워져서
+                    안하려고 조금 쉬었었거든요. 그러다가 남편이 카페게이트 커피가 
+                    맛있다고 한번 가서 보라고 해서 가서 방문해보고 본사에 설명회하는 걸..
+                </p>
+                <div id="successImg">
+                    <img src="success1.jpg" alt="img" class="img1">
+                    <img src="success2.jpg" alt="img" class="img2">
+                    <img src="success3.jpg" alt="img" class="img3">
+                </div>
+                <a href="#">상세보기</a>
+            </div>
+            <div class="middlebox box1">
+                <h3>국민은행 x 오뚜기커피</h3>
+                <h2>프랜차이즈론 체결</h2>
+                <p class="pp">
+                    가맹 본사의 재무 건정성과 가맹점 평균매출,<br>
+                    브랜드의 성장가능성 동의<br>
+                    <b>엄격한 심사를 통해 협무 협약 체결 !<b>
+                </p>
+                <p>
+                    예비가맹점주님들에게 저금리 대출로<br>
+                    <b>최대 5천만원까지 자금지원정책</b>을 시작합니다.
+                </p>
+                <a href="#">상세보기</a>
+            </div>
+        </div>
+        <div id="coffeemenu">
+            <h2>
+                좋은 원료를 사용하는<br>
+                합리적인 프리미엄 브랜드 -
+            </h2>
+            <p>
+                진심을 담은 오뚜기만의 차별화된 맛,<br>
+                다시 찾게 되는 맛을 위해 노력합니다.
+            </p>
+        </div>
+    </section>
+    <div id="sns">
+        <h2>OTTOGI COFFEE SNS</h2>
+        <p>#오뚜기커피 #오뚜기신메뉴 #오뚜기이벤트</p>
+        <div id="snsimg">
+            <img src="navericon.png" alt="sns">
+            <img src="instagram.png" alt="sns">
+            <img src="facebook.png" alt="sns">
+        </div>
+    </div>
+    <footer>
+        <img src="logo111.png" alt="aa">
+        <div class="text">
+            <p>
+                (주)오뚜기 사업자등록번호:138-81-03228 대표이사 이강훈<br>
+                주소(14060) 경기도 안양시 동안구 홍안대로 405(평촌동 106)<br>
+                <br>
+                Copyright ⓒ ottogi co.,Ltd All Rights Reserved.
+            </p>
+        </div>
+        <div class="banner">
+            <img src="banner.gif" alt="banner">
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
