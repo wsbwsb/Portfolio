@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숨툰 - 원서영님의 작품</title>
+</head>
+<style>
+    @font-face{
+        font-family: '나눔스퀘어라운드';
+        src:url('NanumSquareRoundR.ttf');
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        font-family: '나눔스퀘어라운드';
+        list-style: none;
+        text-decoration: none;
+    }
+    #wrap{
+        width: 375px;
+        height: 667px;
+        margin: 10vh auto;
+        background: url('sumtoon/toonbg.png') no-repeat;
+    }
+    #wrap>a{
+        float: right;
+        margin-top: 15px;
+        margin-right: 15px;
+        font-size: 15px;
+    }
+    h2{
+        padding-top: 70px;
+        padding-left: 40px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    ul{
+        padding-top: 20px;
+        padding-left: 40px;
+    }
+    ul li{
+        position: relative;
+        margin-bottom: 20px;
+    }
+    img{
+        border-radius: 8px;
+    }
+    li:hover{
+        transition: all 0.3s;
+        transform: scale(1.02);
+    }
+    #toon1 h3{
+        position: absolute;
+        color: #000;
+        font-size: 23px;
+        top: 50px;
+        right: 100px;
+    }
+    #toon2 #adult{
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        width: 25px;
+    }
+    #toon2 h3{
+        color: #000;
+        font-size: 35px;
+        font-weight: bolder;
+        position: absolute;
+        top: 35px;
+        right: 60px;
+    }
+    h1{
+        text-align: center;
+        padding-top: 160px;
+    }
+</style>
+<body>
+    <div id="wrap">
+        <a href="sumtoon2.html">&lt; 돌아가기</a>
+        <h2>원서영님의 작품</h2>
+        <ul>
+            <li id="toon1"><a href="#">
+                <img src="sumtoon/toon1.png" alt="img" width="290" height="137">
+                <h3>웹툰제목</h3>
+            </a></li>
+            <li id="toon2"><a href="#">
+                <img src="sumtoon/19.png" alt="19" id="adult">
+                <img src="sumtoon/toon2.png" alt="img" width="290" height="137">
+                <h3>제<br>
+                    목
+                </h3>
+            </a></li>
+        </ul>
+        <h1><a href="sumtoon.html">숨툰</a></h1>
+    </div>
+</body>
+</html>
