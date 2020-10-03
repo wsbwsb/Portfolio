@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="icox.css">
+</head>
+<body>
+        <header>
+            <div id="logo">
+               <a href="#">logo</a>
+            </div>
+            <div id="submenu">
+                <ul>
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">About Us</a></li>
+                   <li><a href="#">News</a></li>
+                   <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <form>
+               <input type="text" placeholder="도서 검색어 입력">
+               <input type="image" src="images/search.gif">
+            </form>
+        </header>
+        <div class="clear"></div>
+        <nav id="mainmenu">
+            <ul>
+                <li><a href="#">아이콕스</a></li>
+                <li class="none1"><a href="#">도서소개</a></li>
+                <li class="none2"><a href="#">iCox커뮤니티</a></li>
+                <li class="none1 none2"><a href="#">iCox자료실</a></li>
+            </ul>
+            <div id="button">
+                <a href="#">전체메뉴</a>
+            </div>
+        </nav>
+    <div id="wrap">
+        <!-- <div id="topimg">
+            <img src="images/btn_prev.gif" alt="pre" class="pre">
+            <img src="images/new_book1.jpg" alt="book" class="bigbook">
+            <div id="cell">
+                <img src="images/newbook1_tit.gif" alt="aa" class="title">
+                <img src="images/newbook1_exp.gif" alt="aa" class="exp">
+                <img src="images/detile_view.gif" alt="aa" class="deteil">
+                <div id="state">
+                    <img src="images/state_over.png" alt="aa" class="first">
+                    <img src="images/state_out.png" alt="aa">
+                </div>
+            </div>
+            <img src="images/btn_next.gif" alt="next" class="next">
+        </div> -->
+        <section id="recomm_book">   
+            <div id="book_frame">   
+                <div id="book_content1" class=" bookcon">         
+                    <h2><img src="images/newbook1_tit.gif" alt="안드로이드로 용돈벌기" /></h2>
+                    <ul>
+                        <li class="pic"><img src="images/new_book1.jpg" alt="초보가 고수되기1 안드로이드로 용돈벌기" /></li>
+                        <li class="smr"><img src="images/newbook1_exp.gif" alt="구글 안드로이드 마켓에 등록된 4가지 상용앱 '핑거러너 / 기웃 / 동물원 / 랭킹' 등의 풀 소스를 활용하여 설명하고, 여러 Tip과 Note를 함께 제공합니다." /></li>
+                        <li class="detail"><a href="#"><img src="images/detile_view.gif" alt="자세히 알아보기" /></a></li>
+                    </ul>
+                </div>
+            </div>
+        <div id="arrow">
+            <a class="prev" href="#" onclick="return false"><img src="images/btn_prev.gif" alt="이전" /></a>
+            <a class="next" href="#" onclick="return false"><img src="images/btn_next.gif" alt="다음" /></a>      
+        </div>
+        <ul id="book_roll">
+            <li><img class="firstactive" src="images/state_over.png" alt="안드로이드로 용돈벌기 활성화 상태" /></li>
+            <li><img class="secondactive" src="images/state_out.png" alt="아이폰으로 용돈벌기 비활성화 상태" /></li>
+        </ul>
+    </section>
+        <section>
+           <div id="leftbox">
+            <div id="login">
+                <img src="images/userlogin.gif" alt="aa">
+                <div id="loginbox">
+                    <form>
+                       <input type="text" placeholder="아이디입력">
+                       <input type="text" placeholder="비밀번호입력">
+                    </form>
+                    <img src="images/btn_login.gif" alt="aa">
+                </div>
+                <ul>
+                    <li><a href="#">아이디 / 비밀번호찾기</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+            </div>
+            <div id="sidebanner">
+                <img src="images/banner1.gif" alt="banner">
+                <img src="images/banner2.gif" alt="banner">
+                <img src="images/banner3.gif" alt="banner">
+                <img src="images/banner4.gif" alt="banner">
+            </div>
+           </div>
+           <!-- <div class="clear"></div> -->
+           <div id="middlebox">
+               <ul>
+                   <li class="back1"><a href="#">새로나온 책</a></li>
+                   <li class="back2"><a href="#">새로나온 소식</a></li>
+               </ul>
+               <div id="book">
+                   <div class="box1">
+                       <img src="images/newbook1.gif" alt="aa">
+                       <div class="text">
+                           <h3>PHP/JSP/ASP와 같은 스크립트 언어...</h3>
+                           <p>가히 아이폰, 안드로이드 앱이 '문화를 바꾸었다'고
+                               할 수 있을 정도로, 이제 휴대폰과 앱은 따로 분리해서
+                               생각하기 어려워졌으며 스마트폰의 유저는 본인이 원하는...
+                           </p>
+                           <div class="bottomtext">
+                           작성자 : 한혜진님
+                           <img src="images/star.gif" alt="star">
+                           <span>5점</span>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="box1 aa">
+                    <img src="images/newbook2.gif" alt="aa">
+                    <div class="text">
+                        <h3>iOS의 다양한 오픈소스를 활용하는 방...</h3>
+                        <p>iOS 개발이 개발자들 사이에서 인기를 얻기 시작하면서
+                            시중에 많은 책들이 등장했지만, 막상 실제 앱을 개발하려고
+                            하면 어려운 점이 많습니다. 일례로 개발지식만 다...
+                        </p>
+                        <div class="bottomtext">
+                        작성자 : 김승민님
+                        <img src="images/star.gif" alt="star">
+                        <span>5점</span>
+                        </div>
+                     </div>
+                    </div>
+                   </div>
+               </div>
+               <!-- <div class="clear"></div> -->
+               <div id="rightbox">
+                   <img src="images/down.gif" alt="aa">
+                   <div class="box2">
+                       <img src="images/autor_column.gif" alt="aa">
+                       <iframe width="248" height="152" src="http://www.youtube.com/embed/_QLUqRV1ILU" title="이달의 저자 컬럼"></iframe>
+                    </div>
+                       <div class="text2">
+                           <h3>N-Screen 시대란?</h3>
+                           <p>최근 다양한 디바이스가 보급되면서 기기마다 서로 다른
+                               해상도를 고려하지 않을 수 없게 되었습니다. 우리 주변만
+                               보더라도 모바일 폰에서부터 태블릿, 데스크톱PC, 스마트TV등...
+                           </p>
+                       </div>
+                   
+               </div>
+           </div>
+        </section>
+    </div>
+    <div class="clear"></div>
+    <footer>
+         <p>
+                (주)ICOX 158-718 서울시 양천구 목1동 923-4 현대드림타워<br>
+                대표이사 : 이기택 사업자 등록번호 000-000<br>
+                <b>Copyright ⓒ 2011 Icox Education</b>
+         </p>
+         <div id="footerimg">
+             <img src="images/facebook.gif" alt="facebook">
+             <img src="images/twitter.gif" alt="twitter">
+         </div>
+    </footer>
+</body>
+</html>
