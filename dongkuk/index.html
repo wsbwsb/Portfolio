@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>동국제약</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="slick/slick.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js"></script>
+    </head>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.film').slick({
+                dots: true,
+                infinite: true,
+                variableWidth: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                prevArrow:
+                    '<span class="pre priv_arrow"><img src="pre.png" alt="이전버튼" /></span>',
+                nextArrow:
+                    '<span class="pre next_arrow"><img src="next.png" alt="이전버튼" /></span>',
+            });
+        });
+    </script>
+    <body>
+        <div id="wrap">
+            <div class="popup">
+                <img src="popup.jpg" alt="팝업" />
+                <button class="close1">
+                    <img src="again.jpg" alt="다시보지않기" />
+                </button>
+                <button class="close2">
+                    <img src="close.jpg" alt="닫기" />
+                </button>
+            </div>
+            <header>
+                <nav class="mainnav">
+                    <div class="container">
+                        <a href="index.html" id="logo"
+                            ><img src="logo-white.png" alt="로고"
+                        /></a>
+                        <ul class="mainmenu">
+                            <li>
+                                <a href="#">기업소개</a>
+                                <div>
+                                    <span class="green"></span>
+                                    <span class="blue"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">제품정보</a>
+                                <div>
+                                    <span class="green"></span>
+                                    <span class="blue"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">IR자료</a>
+                                <div>
+                                    <span class="green"></span>
+                                    <span class="blue"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">연구개발</a>
+                                <div>
+                                    <span class="green"></span>
+                                    <span class="blue"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">채용안내</a>
+                                <div>
+                                    <span class="green"></span>
+                                    <span class="blue"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">고객센터</a>
+                                <div>
+                                    <span class="green"></span>
+                                    <span class="blue"></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <nav class="subnav">
+                    <div class="container">
+                        <ul class="submenu">
+                            <li>
+                                <a href="#"
+                                    >기업개요<img
+                                        src="menu-more.png"
+                                        alt="더보기"
+                                /></a>
+                                <ul class="hidemenu">
+                                    <li><a href="#">기업이념</a></li>
+                                    <li><a href="#">인사말</a></li>
+                                    <li>
+                                        <a href="#">글로벌네트워크</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">50주년 역사관</a></li>
+                            <li><a href="#">CI</a></li>
+                            <li><a href="#">대표브랜드</a></li>
+                            <li><a href="#">사회공헌</a></li>
+                            <li>
+                                <a href="#"
+                                    >윤리경영<img
+                                        src="menu-more.png"
+                                        alt="더보기"
+                                /></a>
+                                <ul class="hidemenu">
+                                    <li>
+                                        <a href="#">윤리경영이란</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">윤리경영 실천지침</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">자율준수프로그램</a></li>
+                            <li><a href="#">공장소개</a></li>
+                            <li>
+                                <a href="#"
+                                    >오시는 길<img
+                                        src="menu-more.png"
+                                        alt="더보기"
+                                /></a>
+                                <ul class="hidemenu">
+                                    <li><a href="#">본사/연구소</a></li>
+                                    <li><a href="#">사무소</a></li>
+                                    <li><a href="#">광장</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="submenu">
+                            <li><a href="#">제품검색</a></li>
+                            <li><a href="#">제품소식</a></li>
+                        </ul>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#"
+                                    >재무정보<img
+                                        src="menu-more.png"
+                                        alt="더보기"
+                                /></a>
+                                <ul class="hidemenu">
+                                    <li><a href="#">재무상태표</a></li>
+                                    <li><a href="#">손익계산서</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">공시</a></li>
+                            <li><a href="#">게시판</a></li>
+                        </ul>
+                        <ul class="submenu">
+                            <li><a href="#">중앙연구소 소개</a></li>
+                            <li><a href="#">R&D 전략</a></li>
+                            <li><a href="#">연구활동</a></li>
+                            <li><a href="#">파이프라인</a></li>
+                        </ul>
+                        <ul class="submenu">
+                            <li><a href="#">인재상</a></li>
+                            <li><a href="#">인사 및 복리후생</a></li>
+                            <li><a href="#">채용공고</a></li>
+                        </ul>
+                        <ul class="submenu">
+                            <li><a href="#">뉴스&공지</a></li>
+                            <li><a href="#">전화상담</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="maintext">
+                    <h1>Our passion, your health</h1>
+                    <p>
+                        고객을 향한 변치 않는 우리의 열정으로 더 건강한 내일을
+                        만들어 갑니다.
+                    </p>
+                </div>
+            </header>
+            <section class="main-content">
+                <div class="products">
+                    <hgroup>
+                        <h2>Products</h2>
+                        <h3>제품검색</h3>
+                    </hgroup>
+                </div>
+                <div class="recruit">
+                    <hgroup>
+                        <h2>Recruit</h2>
+                        <h3>인재상</h3>
+                    </hgroup>
+                </div>
+                <div class="csr">
+                    <hgroup>
+                        <h2>CSR</h2>
+                        <h3>사회공헌</h3>
+                    </hgroup>
+                </div>
+                <div class="cs">
+                    <hgroup>
+                        <h2>CS Center</h2>
+                        <h3>고객센터</h3>
+                    </hgroup>
+                </div>
+            </section>
+            <div class="slide-wrap">
+                <section class="slide">
+                    <div class="film slider">
+                        <div class="box">
+                            <img src="slide1.png" alt="이미지" />
+                            <div class="content">
+                                <h3>대표 브랜드</h3>
+                                <span class="ko">판시딜</span
+                                ><span class="bar">|</span><span>Pansidil</span>
+                                <p>
+                                    탈모 관리는 타이밍!<br />
+                                    시작부터, 판시딜
+                                </p>
+                                <a href="#"
+                                    >자세히보기<img
+                                        src="more.png"
+                                        alt="자세히보기"
+                                /></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="slide2.png" alt="이미지" />
+                            <div class="content">
+                                <h3>대표 브랜드</h3>
+                                <span class="ko">인사돌플러스</span
+                                ><span class="bar">|</span
+                                ><span>Insadolplus</span>
+                                <p>
+                                    꼭꼭 씹는 행복<br />
+                                    인사돌플러스
+                                </p>
+                                <a href="#"
+                                    >자세히보기<img
+                                        src="more.png"
+                                        alt="자세히보기"
+                                /></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="slide3.png" alt="이미지" />
+                            <div class="content">
+                                <h3>대표 브랜드</h3>
+                                <span class="ko">마데카솔</span
+                                ><span class="bar">|</span
+                                ><span>Madecassol</span>
+                                <p>
+                                    바르거나 뿌리는~<br />
+                                    옛솔 칫솔 마데카솔!
+                                </p>
+                                <a href="#"
+                                    >자세히보기<img
+                                        src="more.png"
+                                        alt="자세히보기"
+                                /></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="slide4.png" alt="이미지" />
+                            <div class="content">
+                                <h3>대표 브랜드</h3>
+                                <span class="ko">훼라민Q</span
+                                ><span class="bar">|</span><span>FeraminQ</span>
+                                <p>
+                                    11년 연속<br />
+                                    갱년기 치료제<br />
+                                    판매 1위 훼라민Q
+                                </p>
+                                <h5>2009~2019 IMS DATA 기준</h5>
+                                <a href="#"
+                                    >자세히보기<img
+                                        src="more.png"
+                                        alt="자세히보기"
+                                /></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="slide5.png" alt="이미지" />
+                            <div class="content">
+                                <h3>대표 브랜드</h3>
+                                <span class="ko">센시아</span
+                                ><span class="bar">|</span><span>Censia</span>
+                                <p>
+                                    붓고 아픈 다리엔,<br />
+                                    남녀 모두 센시아
+                                </p>
+                                <a href="#"
+                                    >자세히보기<img
+                                        src="more.png"
+                                        alt="자세히보기"
+                                /></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="slide6.png" alt="이미지" />
+                            <div class="content">
+                                <h3>대표 브랜드</h3>
+                                <span class="ko">오라메디</span
+                                ><span class="bar">|</span><span>Oramedy</span>
+                                <p>
+                                    혓바늘, 입안헌데<br />
+                                    오라메디
+                                </p>
+                                <a href="#"
+                                    >자세히보기<img
+                                        src="more.png"
+                                        alt="자세히보기"
+                                /></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="slide7.png" alt="이미지" />
+                            <div class="content">
+                                <h3>대표 브랜드</h3>
+                                <span class="ko">치센</span
+                                ><span class="bar">|</span><span>Chesen</span>
+                                <p>
+                                    치질엔<br />
+                                    먹는 약 치센
+                                </p>
+                                <a href="#"
+                                    >자세히보기<img
+                                        src="more.png"
+                                        alt="자세히보기"
+                                /></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <ul class="slide-dot">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="since">
+                <h2>Since 1968</h2>
+                <p>
+                    ‘HUMAN & LIFE’라는 기업이념 아래 지난 50년간 생명의 존중,
+                    건강한 국민생활을 이어온 동국제약의 발자취
+                </p>
+                <ul>
+                    <li>
+                        <h2>1989.05</h2>
+                        <span></span>
+                        <p>중앙연구소 설립</p>
+                    </li>
+                    <li>
+                        <h2>1999.12</h2>
+                        <span></span>
+                        <p>백만불 수출탑 수상</p>
+                    </li>
+                    <li>
+                        <h2>2005.11</h2>
+                        <span></span>
+                        <p>2005 올해의 브랜드 대상(인사돌)</p>
+                    </li>
+                    <li>
+                        <h2>2017.12</h2>
+                        <span></span>
+                        <p>한국 소비자 만족도 평가 대상(KCSGE)</p>
+                    </li>
+                </ul>
+                <a href="#">50주년 역사관 바로가기</a>
+            </div>
+            <div class="bottom-content">
+                <section class="news">
+                    <article>
+                        <div class="ir">
+                            <h2>IR</h2>
+                            <p>
+                                투명한 경영으로 주주가치 극대화를 실현하는
+                                동국제약의 사업성과와 투자정보를 알려드립니다.
+                            </p>
+                        </div>
+                        <div class="RnD">
+                            <h2>R&D Center</h2>
+                            <p>
+                                끊임없는 신제품 개발과 R&D 기술혁신으로 생명
+                                존중 및 건강한 국민생활을 실현합니다.
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="report">
+                            <h3>보도자료</h3>
+                            <div class="box">
+                                <h4>
+                                    마시는 골다공증 치료제 마시본S액, ‘웹 심...
+                                </h4>
+                                <p>
+                                    (2020-09-22) 동국제약(대표이사 오흥주)은
+                                    &lsq...
+                                </p>
+                                <span>2020.09.22</span>
+                                <a href="#"
+                                    ><img src="view_more.png" alt="더보기"
+                                /></a>
+                            </div>
+                            <div class="box box2">
+                                <h4>
+                                    마데카솔, 녹색어머니중앙회 우리 아이 안전
+                                    ...
+                                </h4>
+                                <p>
+                                    (2020-09-15) 동국제약(부회장 권기범)은 지난
+                                    ...
+                                </p>
+                                <span>2020.09.15</span>
+                                <a href="#"
+                                    ><img src="view_more.png" alt="더보기"
+                                /></a>
+                            </div>
+                        </div>
+                        <div class="notice">
+                            <h3>공지사항</h3>
+                            <div class="box">
+                                <h4>기관 대상 정기 기업탐방 일정 취소 공고</h4>
+                                <p>안녕하십니까 동국제약입니다.</p>
+                                <span>2020.03.02</span>
+                                <a href="#"
+                                    ><img src="view_more.png" alt="더보기"
+                                /></a>
+                            </div>
+                            <div class="box box2">
+                                <h4>기업탐방 관련 공지사항</h4>
+                                <p>
+                                    안녕하세요, 동국제약입니다. 동국제약 기업...
+                                </p>
+                                <span>2019.10.11</span>
+                                <a href="#"
+                                    ><img src="view_more.png" alt="더보기"
+                                /></a>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <footer>
+                <div class="footer-wrap">
+                    <a href="#"><img src="footer-logo.png" alt="로고" /></a>
+                    <div class="center">
+                        <ul class="footer-menu">
+                            <li><a href="#">인재채용</a></li>
+                            <li><a href="#">사이트맵</a></li>
+                            <li><a href="#">오시는길</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보취급방침</a></li>
+                        </ul>
+                        <h4>
+                            동국제약(주)서울특별시 강남구 테헤란로 108길7 TEL
+                            02-2191-9800 FAX 02-6234-0483
+                        </h4>
+                        <p>Copyright © 2019 DONGKOOK. All Rights Reserved.</p>
+                        <ul class="family-site">
+                            <li>
+                                <p>
+                                    패밀리사이트<img
+                                        src="footer-more.png"
+                                        alt="더보기"
+                                    />
+                                </p>
+                            </li>
+                        </ul>
+                        <ul class="family-submenu">
+                            <li><a href="#">동국브랜드</a></li>
+                            <li><a href="#">동국생명과학</a></li>
+                        </ul>
+                        <div class="sns">
+                            <img src="blog.png" alt="블로그" />
+                            <img src="youtube.png" alt="유튜브" />
+                        </div>
+                    </div>
+                    <div class="right">
+                        <p><img src="footer-top.png" alt="top" />TOP</p>
+                        <span>광고심의필 : 2020-1536-003100</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
