@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stour_Sign In</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/def4536023.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            font-family: 'Noto Sans KR';
+        }
+        #wrap{
+            width: 100%;
+            height: 100vh;
+            background: url('Stour/signupBG.png') no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        a{
+            color: #fff;
+            font-size: 55px;
+            margin-top: 200px;
+            font-weight: bold;
+        }
+        span{
+            font-weight: lighter;
+        }
+        #box>div{
+            width: 400px;
+            height: 50px;
+            background-color: rgba(0,0,0,0.3);
+            border-radius: 5px;
+            margin-bottom:20px;
+        }
+        #id{
+            margin-top: 50px;
+        }
+        #box input{
+            border: transparent;
+            background-color: transparent;
+            height: 50px;
+            width: 350px;
+            outline: transparent;
+            color: #fff;
+            margin-left: 10px;
+        }
+        input::-webkit-input-placeholder { color: #ccc; }
+
+        #box div i{
+            color: #ccc;
+            margin-left: 20px;
+        }
+        #signin{
+            display: inline-block;
+            width: 400px;
+            height: 50px;
+            background-color: #41ae97;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 50px;
+            font-weight: lighter;
+            margin: 0;
+        }
+        #lost{
+            font-size: 16px;
+            color: #fff;
+            margin-top: 15px;
+            font-weight: normal;
+        }
+        #lost:hover{
+            text-decoration: underline;
+        }
+        #new{
+            font-size: 16px;
+            color: #fff;
+            margin-top: 8px;
+            font-weight: normal;
+        }
+        #new:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <a href="Stour.html"><span>S</span>Tour</a>
+        <div id="box">
+            <div id="id">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Username">
+            </div>
+            <div id="pw">
+                <i class="fas fa-unlock-alt"></i>
+                <input type="password" placeholder="Password">
+            </div>
+            <a href="#" id="signin">SIGN IN</a>
+        </div>
+        <a href="#" id="lost">Lost your password?</a>
+        <a href="Stour_SignUp.html" id="new">New to Stour?</a>
+    </div>
+</body>
+</html>

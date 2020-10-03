@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stour_asia</title>
+    <script src="https://kit.fontawesome.com/def4536023.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Stour_asia.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/jquery-animate-css-rotate-scale.js"></script>
+    <script>
+        $(function(){
+            $("#tour_product li").mouseover(function(){
+                $(this).stop().animate({
+                    marginTop:"-10px"
+                },300);
+            });
+            $("#tour_product li").mouseout(function(){
+                $(this).stop().animate({
+                    marginTop:"0"
+                },300);
+            });
+
+            $("#topbtn").click(function(){
+                $('html').stop().animate({ scrollTop: 0 }, 500);
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div id="mainnav">
+        <a href="Stour.html" id="logo">
+            S<span>Tour</span>
+        </a>
+        <div id="search">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search">
+        </div>
+        <ul id="mainmenu">
+            <li><a href="Stour.html">HOME</a></li>
+            <li><a href="#">TOURS</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="Stour_SignIn.html">SIGN IN</a></li>
+        </ul>
+        </div>
+    </header>
+    <div id="top">
+        <div id="box">
+            <div id="top" class="bg1 b">
+                <!-- <img src="Stour/mainimg.jpg" alt="mainimg" class="mainimg"> -->
+                    <div id="toptxt">
+                        <h1>ASIA</h1>
+                       <!-- <P>DESIGN YOUR OWN UNIQUE EXPERIENCE</P> -->
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div id="tour">
+        <div class="tour_search city">
+            <input type="text" placeholder="Destination, City">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="tour_search">
+            <select name="#" id="#">
+                <option value="#">Any Month</option>
+                <option value="#">January</option>
+                <option value="#">Feburary</option>
+                <option value="#">March</option>
+                <option value="#">April</option>
+                <option value="#">May</option>
+                <option value="#">July</option>
+                <option value="#">August</option>
+                <option value="#">September</option>
+                <option value="#">October</option>
+                <option value="#">November</option>
+                <option value="#">December</option>
+            </select>
+            <i class="far fa-calendar-check"></i>
+        </div>
+        <div class="tour_search">
+            <select name="#" id="#">
+                <option value="#">Soft By Date</option>
+                <option value="#">Price Low to High</option>
+                <option value="#">Price High to Low</option>
+                <option value="#">Soft By Name</option>
+                <option value="#">Soft By Popularty</option>
+                <option value="#">Soft By Review Sorce</option>
+            </select>
+            <i class="fas fa-sort"></i>
+        </div>
+        <a href="#" id=search_btn>Search</a>
+    </div>
+    
+    <ul id="tour_product">
+        <h5 class="related">Related Tours</h5>
+        <li>
+            <!-- <img src="Stour/paris.png" alt="img" height="160"> -->
+            <h3>$5,000</h3>
+            <div class="img hk"></div>
+            <div class="tourtxt">
+                <h2>hong Kong</h2>
+                <p>Iconic, Shopping, City Tours</p>
+                <div class="tourtxt2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <div class="right">
+                        <i class="far fa-clock"></i>
+                        <span>8 Hours</span>
+                    </div>
+                    <h4>4 reviews</h4>
+                </div>
+            </div>
+        </li>
+        <li>
+            <!-- <img src="Stour/switz.jpg" alt="img"> -->
+            <h3><span>$5,000</span>$4000</h3>
+            <h5>Sale</h5>
+            <div class="img Seoul"></div>
+            <div class="tourtxt">
+                <h2>Seoul</h2>
+                <p>City Tours, Shopping</p>
+                <div class="tourtxt2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <div class="right">
+                        <i class="far fa-clock"></i>
+                        <span>5 days</span>
+                    </div>
+                    <h4>4 reviews</h4>
+                </div>
+            </div>
+        </li>
+        <li>
+            <!-- <img src="Stour/kyoto.jpg" alt="img"> -->
+            <h3>$5,000</h3>
+            <div class="img Japan"></div>
+            <div class="tourtxt">
+                <h2>Japan</h2>
+                <p>City Tours, Iconic</p>
+                <div class="tourtxt2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <div class="right">
+                        <i class="far fa-clock"></i>
+                        <span>5 days</span>
+                    </div>
+                    <h4>4 reviews</h4>
+                </div>
+            </div>
+        </li>
+        <li>
+            <!-- <img src="Stour/niko.jpg" alt="img"> -->
+            <h3>$5,000</h3>
+            <div class="img Niko"></div>
+            <div class="tourtxt">
+                <h2>Niko Trip</h2>
+                <p>Mountain, Rural, Urban</p>
+                <div class="tourtxt2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <div class="right">
+                        <i class="far fa-clock"></i>
+                        <span>4 days</span>
+                    </div>
+                    <h4>4 reviews</h4>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div class="clear"></div>
+    <section>
+        <div id="text">
+            <h2>
+                Kyoto served as Japan’s capital and the emperor’s residence
+                from 794 until 1868.
+            </h2>
+            <h3>Exploring the Area</h3>
+            <p>Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. 
+                Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse nihil, flexitarian Truffaut synth art 
+                party deep v chillwave. Seitan High Life reprehenderit consectetur cupidatat kogi. Et leggings fanny pack, 
+                elit bespoke vinyl art party Pitchfork selfies master cleanse Kickstarter seitan retro. Drinking vinegar stumptown 
+                yr pop-up artisan sunt. Deep v cliche lomo biodiesel Neutra selfies.
+            </p>
+            <h3>Coastal Adventures</h3>
+            <p>
+                Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, 
+                photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus.
+            </p>
+        </div>
+        <div class="box">
+            <img src="Stour/seoul.png" alt="img">
+            <h3>Eating and Drinking</h3>
+            <p>
+                See-through delicate embroidered organza blue lining luxury acetate-mix stretch 
+                pleat detailing. Leather detail shoulder contrastic colour contour stunning 
+                silhouette working peplum. Statement buttons cover-up tweaks patch pockets 
+                perennial lapel collar flap chest pockets topline
+            </p>
+            <h3>What to See and Do</h3>
+            <p>
+                Foam padding in the insoles leather finest quality staple flat slip-on design
+                 pointed toe off-duty shoe. Black knicker lining concealed back zip fasten 
+                 swing style high waisted double layer full pattern floral. Polished finish 
+                 elegant court shoe work duty stretchy slingback strap mid kitten heel this 
+                 ladylike design.
+            </p>
+        </div>
+        <div class="box">
+            <img src="Stour/niko.png" alt="img">
+            <h3>Where to Stay</h3>
+            <p>
+                Meh synth Schlitz, tempor duis single-origin coffee ea next level 
+                ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, 
+                PBR 3 wolf moon beard Helvetica. Salvia esse nihil, flexitarian 
+                Truffaut synth art party deep v chillwave. Seitan High Life 
+                reprehenderit consectetur cupidatat kogi. Et leggings fanny pack, 
+                elit bespoke vinyl art party Pitchfork selfies master cleanse 
+                Kickstarter seitan retro. Drinking vinegar stumptown yr pop-up artisan
+                 sunt. Deep v cliche lomo biodiesel Neutra selfies.
+            </p>
+            <h3>How to Get Around</h3>
+            <p>
+                Exercitation photo booth stumptown tote bag Banksy, elit small batch 
+                freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit
+                 kale chips proident chillwave deep v laborum. Aliquip veniam delectus.
+            </p>
+        </div>
+        <a href="#" id="share">
+            <i class="far fa-envelope"></i>
+            Share this tour
+        </a>
+        <article>
+            <h5 class="related">Leave A Reply</h5>
+            <div class="form">
+                <p>Comment</p>
+                <textarea cols="30" rows="10"></textarea>
+            </div>
+            <div class="form name">
+                <p>Name</p>
+                <input type="text">
+            </div>
+            <div class="form">
+                <p>Email</p>
+                <input type="text">
+            </div>
+            <div class="clear"></div>
+            <a href="#" id="post">Post Comment</a>
+        </article>
+    </section>
+    <div id="banner">
+        <img src="Stour/bottomlogo.jpg" alt="img">
+    </div>
+    <footer>
+        <ul id="mainfooter">
+            <li>
+                <h2><span>S</span>Tour</h2>
+                <p>
+                London is a megalopolis of people, ideas and frenetic energy.
+                The capital and largest city of the United Kingdom
+                </p>
+                <div id="sns">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+                </div>
+            </li>
+            <li id="two">
+                <h3>Contact Info</h3>
+                <p>1-234-56789</p>
+                <p>184 Main Street East Perl Habour 8007</p>
+                <p>Mon – Sat 8.00 – 18.00 Sunday CLOSED</p>
+            </li>
+            <li id="three">
+                <h3>Newletter</h3>
+                <input type="text" placeholder="Your Email Address"><Br>
+                <a href="#">Subscribe</a>
+            </li>
+        </ul>
+    </footer>
+    <div id="border">
+        <div id="footernav">
+        <p id="copy">&copy; Copyright Sobin Tour Theme Demo - Theme by ThemeGoods</p>
+        <ul id="bottommenu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">TOURS</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">SIGN IN</a></li>
+        </ul>
+        </div>
+        <a href="#" id="topbtn"><i class="fas fa-angle-up"></i></a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stour_Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            font-family: 'Noto Sans KR';
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background: url('Stour/bg.png') no-repeat;
+            background-size: cover;
+        }
+        #wrap{
+            width: 1000px;
+            height: 700px;
+            background-color: #fff;
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            margin-top: -350px;
+            left: 50%;
+            margin-left: -500px;
+        }
+        #left{
+            width: 500px;
+            height: 700px;
+            background: url('Stour/signUp.png') no-repeat;
+            background-size: 100%;
+            border-radius: 10px 0 0 10px;
+            color: #fff;
+            text-align: center;
+            float: left;
+        }
+        #left h1{
+            font-size: 70px;
+            font-family: 'Bebas Neue';
+            font-weight: normal;
+            padding-top: 130px;
+            /* padding-bottom: 30px; */
+            letter-spacing: 2px;
+        }
+        #left p{
+            font-size: 16px;
+            color: #fff;
+            font-weight: lighter;
+        }
+        #left #two{
+            margin-top: 40px;
+        }
+        #left a{
+            display: inline-block;
+            padding: 4px 33px;
+            border: 1px solid #fff;
+            color: #fff;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        #right{
+            width: 450px;
+            height: 560px;
+            float: right;
+            padding-top: 140px;
+            padding-left: 50px;
+        }
+        #right #flex{
+            display: flex;
+        }
+        .name{
+            outline: transparent;
+            width: 180px;
+            height: 40px;
+        }
+        .big{
+            width: 390px;
+            height: 40px;
+            outline: transparent;
+        }
+        .first{
+            margin-right: 20px;
+        }
+        input{
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 15px;
+            padding-left: 10px;
+            color: rgb(104, 104, 104);
+        }
+        p{
+            color: rgb(199, 199, 199);
+            font-size: 14px;
+            padding-bottom: 5px;
+        }
+        #right li{
+            margin-bottom: 30px;
+        }
+        #right a{
+            display: inline-block;
+            width: 400px;
+            height: 45px;
+            background-color: #41ae97;
+            color: #fff;
+            text-align: center;
+            line-height: 45px;
+            font-size: 17px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="left">
+            <h1>SIGN UP</h1>
+            <p>
+                Please enter your details to sign Up and be<br>
+                part of our great community.
+            </p>
+            <p id="two">Already have an account?</p>
+            <a href="Stour_SignIn.html">SIGN IN</a>
+        </div>
+        <div id="right">
+            <ul>
+                <li id="flex">
+                    <div class="first">
+                        <p>FIRST NAME</p>
+                        <input type="text" class="name">
+                    </div>
+                    <div>
+                        <p>LAST NAME</p>
+                        <input type="text"  class="name">
+                    </div>
+                </li>
+                <li>
+                    <P>USER NAME</P>
+                    <input type="text" class="big">
+                </li>
+                <li>
+                    <P>EMAIL ADDRESS</P>
+                    <input type="text" class="big">
+                </li>
+                <li>
+                    <P>PASSWORD</P>
+                    <input type="password" class="big">
+                </li>
+            </ul>
+            <a href="#">SIGN UP</a>
+        </div>
+    </div>
+</body>
+</html>
