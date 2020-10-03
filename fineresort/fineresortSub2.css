@@ -1,0 +1,649 @@
+@media screen and (max-width:749px){
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    #mainmenu ul{
+        display: none;
+    }
+    #topblack{
+        width: 100%;
+        height: 10px;
+        background-color: #000;
+    }
+    header{
+        width: 100%;
+        height: 90px;
+        /* border: 1px solid red; */
+        position: fixed;
+        z-index: 99;
+        box-shadow: 0 0 10px rgba(0,0,0,0.8);
+        background: url('barbtn.png') no-repeat;
+        background-position: 97% 64%;
+        background-size: 6%;
+        background-color: #fff;
+    }
+    #logo{
+        background-image: url('logo.png');
+        width: 130px;
+        height: 52px;
+        display: block;
+        text-indent: -9999px;
+        /* float: left; */
+        margin:10px auto;
+        /* border: 1px solid red; */
+    }
+    #mainimg{
+        width:100%;
+        padding-top: 90px;
+        position: relative;
+        height: 149px;
+    }
+    #mainimg img{
+        width: 100%;
+        height: 150px;
+    }
+    #mainimg .golf{
+        color: #fff;
+        position: absolute;
+        top: 65%;
+        left: 68%;
+    }
+    #mainimg h2{
+        font-weight: normal;
+        font-size: 26px;
+    }
+    #mainimg p{
+        font-size: 14px;
+        font-style: italic;
+    }
+    #submenu{
+        background-color: #eee;
+        width: 100%;
+        height: 40px;
+        text-align: center;
+    }
+    #submenu ul{
+        display: inline-block;
+    }
+    #submenu ul li{
+        float: left;
+    }
+    #submenu ul li a{
+        font-size: 13px;
+        color: rgb(53,53,53);
+        display: inline-block;
+        padding: 0 15px;
+        font-weight: bold;
+        line-height: 40px;
+    }
+    #submenu ul li a:hover{
+        color:rgb(0,160,201);
+        border-bottom:2px solid rgb(0,160,201)
+    }
+    #submenu ul li:first-child a{
+        color:rgb(0,160,201);
+        border-bottom:2px solid rgb(0,160,201)
+    }
+    section{
+        width: 95%;
+        margin: 0 auto;
+    }
+    section h2{
+        text-align: center;
+        padding: 30px 0 20px 0;
+    }
+    section ul li{
+        /* width: 100%; */
+        height: 230px;
+        /* border: 1px solid #ccc; */
+        margin-bottom: 20px;
+        background-color: #eee;
+        padding: 20px 15px;
+    }
+    section ul li h3{
+        font-size: 20px;
+        color: rgb(53,53,53);
+        padding: 0 0 5px 0;
+    }
+    .left{
+        width: 65%;
+        float: left;
+    }
+    .left p{
+        font-size: 14px;
+        color: rgb(53,53,53);
+    }
+    .left h4{
+        font-size: 13px;
+        font-weight: normal;
+        margin-top: 10px;
+        color: rgb(53,53,53);
+    }
+    .right{
+        /* width: 34%; */
+        float: right;
+    }
+    .right img{
+        width: 100%;
+    }
+    .dot{
+        margin-right: 5px;
+    }
+    section>h3{
+        width: 90%;
+        font-weight: normal;
+        font-size: 15px;
+        color: rgb(53,53,53);
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    #bottombar{
+        width: 100%;
+        height: 40px;
+        /* background-color: #eee; */
+        /* margin-top: 50px; */
+        border-top: 1px solid rgb(151, 151, 151);
+        /* border-bottom: 1px solid #000; */
+    }
+    #bottombar ul{
+        width: 90%;
+        height: 40px;
+        margin: 0 auto;
+    }
+    #bottombar ul li{
+        float: left;
+        height: 35px;
+    }
+    #bottombar ul li a{
+        display: inline-block;
+        color: rgb(53, 53, 53);
+        font-size: 11px;
+        /* font-weight: bold; */
+        padding: 0 8px;
+        line-height: 40px;
+    }
+    #bottombar ul li:last-child a{
+        display: none;
+    }
+    #bottombar ul li a:hover{
+        font-weight: bold;
+    }
+    #bottombar ul li:nth-child(3) a, #bottombar ul li:nth-child(4) a{
+        color: rgb(0,160,201);
+    }
+    footer{
+        width: 100%;
+        height: 170px;
+        clear: both;
+        background-color: rgb(0, 0, 0);
+        color: #ccc;
+    }
+    footer p{
+        font-size: 9px;
+        padding-top: 20px;
+        line-height: 20px;
+        margin-left: 10px;
+    }
+    footer h4{
+        font-size: 10px;
+        font-weight: normal;
+        margin: 15px 0 10px 10px;
+    } 
+}
+@media screen and (min-width:750px) and (max-width:959px){
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    #mainmenu ul li>ul{
+        display: none;
+    }
+    #topblack{
+        width: 100%;
+        height: 13px;
+        background-color: #000;
+    }
+    header{
+        width: 100%;
+        height: 90px;
+        /* border: 1px solid red; */
+        position: fixed;
+        z-index: 99;
+        box-shadow: 0 0 10px rgba(0,0,0,0.8);
+        background-color: #fff;
+    }
+    #logo{
+        background-image: url('logo.png');
+        width: 130px;
+        height: 52px;
+        display: block;
+        text-indent: -9999px;
+        float: left;
+        margin:10px 20px;
+        /* border: 1px solid red; */
+    }
+    #mainmenu ul{
+        padding-top: 30px;
+        height: 60px;
+        width: 85%;
+        /* border: 1px solid red; */
+        margin-left: 22%;
+    }
+    #mainmenu ul li{
+        float: left;
+        text-align: center;
+    }
+    #mainmenu ul li a{
+        display: inline-block;
+        color: rgb(53, 53, 53);
+        font-size: 14px;
+        padding: 5px 8px;
+        font-weight: bold;
+        /* line-height: 70px; */
+    }
+    #mainmenu ul li a:hover{
+        border-bottom: 2px solid rgb(0,160,201);
+    }
+    #mainmenu>ul>li:nth-child(5) a{
+        border-bottom: 2px solid rgb(0,160,201);
+        color: rgb(0,160,201);
+    }
+    #mainimg{
+        width:100%;
+        padding-top: 90px;
+        position: relative;
+        height: 150px;
+    }
+    #mainimg img{
+        width: 100%;
+        height: 150px;
+    }
+    #mainimg .golf{
+        color: #fff;
+        position: absolute;
+        top: 65%;
+        left: 80%;
+    }
+    #mainimg h2{
+        font-weight: normal;
+        font-size: 30px;
+    }
+    #mainimg p{
+        font-size: 18px;
+        font-style: italic;
+    }
+    #submenu{
+        background-color: #eee;
+        width: 100%;
+        height: 40px;
+        text-align: center;
+    }
+    #submenu ul{
+        display: inline-block;
+    }
+    #submenu ul li{
+        float: left;
+    }
+    #submenu ul li a{
+        font-size: 13px;
+        color: rgb(53,53,53);
+        display: inline-block;
+        padding: 0 20px;
+        font-weight: bold;
+        line-height: 40px;
+    }
+    #submenu ul li a:hover{
+        color:rgb(0,160,201);
+        border-bottom:2px solid rgb(0,160,201)
+    }
+    #submenu ul li:first-child a{
+        color:rgb(0,160,201);
+        border-bottom:2px solid rgb(0,160,201)
+    }
+    section{
+        width: 95%;
+        margin: 0 auto;
+    }
+    section h2{
+        text-align: center;
+        padding: 50px 0 30px 0;
+    }
+    section ul li{
+        float: left;
+        width: 44%;
+        height: 250px;
+        /* border: 1px solid #ccc; */
+        margin-bottom: 20px;
+        background-color: #eee;
+        padding: 20px 15px;
+    }
+    section ul li:first-child, section ul li:nth-child(3){
+        margin:0 10px;
+    }
+    section ul li h3{
+        font-size: 20px;
+        color: rgb(53,53,53);
+        padding: 0 0 5px 0;
+    }
+    .left{
+        width: 60%;
+        float: left;
+    }
+    .left p{
+        font-size: 13px;
+        color: rgb(53,53,53);
+    }
+    .left h4{
+        font-size: 12px;
+        font-weight: normal;
+        margin-top: 10px;
+        color: rgb(53,53,53);
+    }
+    .right{
+        width: 35%;
+        float: right;
+    }
+    .right img{
+        width: 100%;
+    }
+    .dot{
+        margin-right: 5px;
+    }
+    section>h3{
+        width: 90%;
+        font-weight: normal;
+        font-size: 15px;
+        color: rgb(53,53,53);
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    #bottombar, section h3{
+        clear: both;
+    }
+    #bottombar{
+        width: 100%;
+        height: 40px;
+        /* background-color: #eee; */
+        /* margin-top: 50px; */
+        border-top: 1px solid rgb(145, 145, 145);
+        /* border-bottom: 1px solid #000; */
+    }
+    #bottombar ul{
+        width: 90%;
+        height: 40px;
+        margin: 0 auto;
+    }
+    #bottombar ul li{
+        float: left;
+        height: 35px;
+    }
+    #bottombar ul li a{
+        display: inline-block;
+        color: rgb(53, 53, 53);
+        font-size: 12px;
+        /* font-weight: bold; */
+        padding: 0 8px;
+        line-height: 40px;
+    }
+    #bottombar ul li:last-child a{
+        display: none;
+    }
+    #bottombar ul li a:hover{
+        font-weight: bold;
+    }
+    #bottombar ul li:nth-child(3) a, #bottombar ul li:nth-child(4) a{
+        color: rgb(0,160,201);
+    }
+    footer{
+        width: 100%;
+        height: 150px;
+        clear: both;
+        background-color: rgb(0, 0, 0);
+        color: #ccc;
+    }
+    footer p{
+        font-size: 9px;
+        padding-top: 20px;
+        line-height: 20px;
+        margin-left: 30px;
+    }
+    footer h4{
+        font-size: 10px;
+        font-weight: normal;
+        margin: 15px 0 10px 30px;
+    } 
+}
+@media screen and (min-width:960px){
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    #mainmenu ul li>ul{
+        display: none;
+    }
+    #topblack{
+        width: 100%;
+        height: 13px;
+        background-color: #000;
+    }
+    header{
+        width: 100%;
+        height: 103px;
+        /* border: 1px solid red; */
+        position: fixed;
+        z-index: 99;
+        box-shadow: 0 0 10px rgba(0,0,0,0.8);
+        background-color: #fff;
+    }
+    #logo{
+        background-image: url('logo.png');
+        width: 130px;
+        height: 52px;
+        display: block;
+        text-indent: -9999px;
+        float: left;
+        margin:15px 0 15px 30px;
+        /* border: 1px solid red; */
+    }
+    #mainmenu ul{
+        padding-top: 30px;
+        height: 60px;
+        width: 85%;
+        /* border: 1px solid red; */
+        margin-left: 210px;
+    }
+    #mainmenu ul li{
+        float: left;
+        text-align: center;
+        width: 10%;
+    }
+    #mainmenu ul li a{
+        display: inline-block;
+        color: rgb(53, 53, 53);
+        font-size: 15px;
+        padding: 10px 0;
+        font-weight: bold;
+        /* line-height: 70px; */
+    }
+    #mainmenu ul li a:hover{
+        border-bottom: 2px solid rgb(0,160,201);
+    }
+    #mainmenu>ul>li:nth-child(5) a{
+        border-bottom: 2px solid rgb(0,160,201);
+        color: rgb(0,160,201);
+    }
+    #mainimg{
+        width:100%;
+        padding-top: 100px;
+        position: relative;
+        height: 200px;
+    }
+    #mainimg img{
+        width: 100%;
+        height: 200px;
+    }
+    #mainimg .golf{
+        color: #fff;
+        position: absolute;
+        top: 60%;
+        left: 78%;
+    }
+    #mainimg h2{
+        font-weight: normal;
+        font-size: 34px;
+    }
+    #mainimg p{
+        font-size: 20px;
+        font-style: italic;
+    }
+    #submenu{
+        background-color: #eee;
+        width: 100%;
+        height: 40px;
+        text-align: center;
+    }
+    #submenu ul{
+        display: inline-block;
+    }
+    #submenu ul li{
+        float: left;
+    }
+    #submenu ul li a{
+        font-size: 13px;
+        color: rgb(53,53,53);
+        display: inline-block;
+        padding: 0 30px;
+        font-weight: bold;
+        line-height: 40px;
+    }
+    #submenu ul li a:hover{
+        color:rgb(0,160,201);
+        border-bottom:2px solid rgb(0,160,201)
+    }
+    #submenu ul li:first-child a{
+        color:rgb(0,160,201);
+        border-bottom:2px solid rgb(0,160,201)
+    }
+    section{
+        width: 95%;
+        margin: 0 auto;
+    }
+    section h2{
+        text-align: center;
+        padding: 50px 0 30px 0;
+    }
+    section ul li{
+        float: left;
+        width: 44%;
+        height: 220px;
+        /* border: 1px solid #ccc; */
+        margin-bottom: 20px;
+        background-color: #eee;
+        padding: 20px 15px;
+    }
+    section ul li:first-child, section ul li:nth-child(3){
+        margin:0 20px;
+    }
+    section ul li h3{
+        font-size: 20px;
+        color: rgb(53,53,53);
+        padding: 0 0 5px 0;
+    }
+    .left{
+        width: 60%;
+        float: left;
+    }
+    .left p{
+        font-size: 13px;
+        color: rgb(53,53,53);
+    }
+    .left h4{
+        font-size: 12px;
+        font-weight: normal;
+        margin-top: 10px;
+        color: rgb(53,53,53);
+    }
+    .right{
+        width: 35%;
+        float: right;
+    }
+    .right img{
+        /* width: 100%; */
+    }
+    .dot{
+        margin-right: 5px;
+    }
+    section>h3{
+        width: 90%;
+        font-weight: normal;
+        font-size: 15px;
+        color: rgb(53,53,53);
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    #bottombar, section h3{
+        clear: both;
+    }
+    #bottombar{
+        width: 100%;
+        height: 40px;
+        /* background-color: #eee; */
+        /* margin-top: 50px; */
+        border-top: 1px solid rgb(145, 145, 145);
+        /* border-bottom: 1px solid #000; */
+    }
+    #bottombar ul{
+        width: 90%;
+        height: 40px;
+        margin: 0 auto;
+    }
+    #bottombar ul li{
+        float: left;
+        height: 35px;
+    }
+    #bottombar ul li a{
+        display: inline-block;
+        color: rgb(53, 53, 53);
+        font-size: 12px;
+        /* font-weight: bold; */
+        padding: 0 8px;
+        line-height: 40px;
+    }
+    #bottombar ul li:last-child a{
+        display: none;
+    }
+    #bottombar ul li a:hover{
+        font-weight: bold;
+    }
+    #bottombar ul li:nth-child(3) a, #bottombar ul li:nth-child(4) a{
+        color: rgb(0,160,201);
+    }
+    footer{
+        width: 100%;
+        height: 150px;
+        clear: both;
+        background-color: rgb(0, 0, 0);
+        color: #ccc;
+    }
+    footer p{
+        font-size: 9px;
+        padding-top: 20px;
+        line-height: 20px;
+        margin-left: 30px;
+    }
+    footer h4{
+        font-size: 10px;
+        font-weight: normal;
+        margin: 15px 0 10px 30px;
+    } 
+}

@@ -1,0 +1,768 @@
+@media screen and (max-width:749px){
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    #mainmenu ul{
+        display: none;
+    }
+    #topblack{
+        width: 100%;
+        height: 10px;
+        background-color: #000;
+    }
+    header{
+        width: 100%;
+        height: 90px;
+        /* border: 1px solid red; */
+        position: fixed;
+        z-index: 99;
+        box-shadow: 0 0 10px rgba(0,0,0,0.8);
+        background: url('barbtn.png') no-repeat;
+        background-position: 97% 64%;
+        background-size: 6%;
+        background-color: #fff;
+    }
+    #logo{
+        background-image: url('logo.png');
+        width: 130px;
+        height: 52px;
+        display: block;
+        text-indent: -9999px;
+        /* float: left; */
+        margin:10px auto;
+        /* border: 1px solid red; */
+    }
+    #mainimg{
+        width:100%;
+        padding-top: 90px;
+        position: relative;
+        height: 149px;
+    }
+    #mainimg img{
+        width: 100%;
+        height: 150px;
+    }
+    #mainimg .golf{
+        color: #fff;
+        position: absolute;
+        top: 65%;
+        left: 80%;
+    }
+    #mainimg h2{
+        font-weight: normal;
+        font-size: 28px;
+    }
+    #mainimg p{
+        font-size: 18px;
+        font-style: italic;
+    }
+    #submenu{
+        background-color: #eee;
+        width: 100%;
+        height: 40px;
+        text-align: center;
+    }
+    #submenu ul{
+        display: inline-block;
+    }
+    #submenu ul li{
+        float: left;
+    }
+    #submenu ul li a{
+        font-size: 13px;
+        color: rgb(53,53,53);
+        display: inline-block;
+        padding: 0 15px;
+        font-weight: bold;
+        line-height: 40px;
+    }
+    #submenu ul li a:hover{
+        color:rgb(0,160,201);
+        border-bottom:2px solid rgb(0,160,201)
+    }
+    #submenu ul li:first-child a{
+        color:rgb(0,160,201);
+        border-bottom:2px solid rgb(0,160,201)
+    }
+    section{
+        width: 95%;
+        margin: 0 auto;
+    }
+    #text{
+        width: 400px;
+        text-align: center;
+        margin: 40px auto;
+    }
+    #text h1{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    #text p{
+        font-size: 13px;
+        width: 100%;
+        line-height: 22px;
+        color: rgb(53,53,53);
+    }
+    #course{
+        width: 100%;
+        height: 450px;
+        /* border: 1px solid red; */
+    }
+    #course h3{
+        padding: 0 0 10px 10%;
+        font-size: 18px;
+        color: rgb(53,53,53);
+    }
+    #tabs{
+        width: 500px;
+        position: relative;
+        margin: 0 auto;
+    }
+    .tt{
+        width: 120px;
+        float: left;
+        text-align: center;
+    }
+    .tt .tab img{
+        width: 90%;
+        margin: 10px;
+    }
+    #tabs label{
+        width: 120px;
+        display: block;
+        text-align: center; 
+        background-color: #eee;        
+        padding: 10px 0;
+        border-top:1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+        color: rgb(78, 78, 78);
+    }
+    #tabs .tab{
+        background-color: #fff;
+        border-bottom: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        position: absolute;
+        left: 0;
+        width: 480px;
+        display: none;
+    }
+    /* .tab h4{
+        font-weight: normal;
+        color: rgb(53,53,53);
+    }
+    .tab p{
+        font-size: 12px;
+        color: rgb(53,53,53);
+    } */
+    #tabs input[type="radio"]{
+        display: none;
+    }
+    /* 인접선택자 : 선택자A+선택자B
+                   선택자A 바로 다음에 오는 선택자B를 선택 */
+    #tabs input[type="radio"]:checked+label{
+        background-color: #fff;
+    }
+    #tabs input[type="radio"]:checked+label+.tab{
+        display: block;
+    }
+    #table img{
+        width: 90%;
+    }
+    #table{
+        width: 100%;
+        margin: 0 auto;
+        /* border: 1px solid red; */
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    #bottombar{
+        width: 100%;
+        height: 40px;
+        background-color: #eee;
+        /* margin-top: 50px; */
+        /* border-top: 1px solid gray; */
+        /* border-bottom: 1px solid #000; */
+    }
+    #bottombar ul{
+        width: 90%;
+        height: 40px;
+        margin: 0 auto;
+    }
+    #bottombar ul li{
+        float: left;
+        height: 35px;
+    }
+    #bottombar ul li a{
+        display: inline-block;
+        color: rgb(53, 53, 53);
+        font-size: 11px;
+        /* font-weight: bold; */
+        padding: 0 8px;
+        line-height: 40px;
+    }
+    #bottombar ul li:last-child a{
+        display: none;
+    }
+    #bottombar ul li a:hover{
+        font-weight: bold;
+    }
+    #bottombar ul li:nth-child(3) a, #bottombar ul li:nth-child(4) a{
+        color: rgb(0,160,201);
+    }
+    footer{
+        width: 100%;
+        height: 170px;
+        clear: both;
+        background-color: rgb(0, 0, 0);
+        color: #ccc;
+    }
+    footer p{
+        font-size: 9px;
+        padding-top: 20px;
+        line-height: 20px;
+        margin-left: 10px;
+    }
+    footer h4{
+        font-size: 10px;
+        font-weight: normal;
+        margin: 15px 0 10px 10px;
+    } 
+}
+@media screen and (min-width:750px) and (max-width:959px){
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    #mainmenu ul li>ul{
+        display: none;
+    }
+    #topblack{
+        width: 100%;
+        height: 10px;
+        background-color: #000;
+    }
+    header{
+        width: 100%;
+        height: 90px;
+        /* border: 1px solid red; */
+        position: fixed;
+        z-index: 99;
+        box-shadow: 0 0 10px rgba(0,0,0,0.8);
+        background-color: #fff;
+    }
+    #logo{
+        background-image: url('logo.png');
+        width: 130px;
+        height: 52px;
+        display: block;
+        text-indent: -9999px;
+        float: left;
+        margin:10px 20px;
+        /* border: 1px solid red; */
+    }
+    #mainmenu ul{
+        padding-top: 30px;
+        height: 60px;
+        width: 85%;
+        /* border: 1px solid red; */
+        margin-left: 22%;
+    }
+    #mainmenu ul li{
+        float: left;
+        text-align: center;
+    }
+    #mainmenu ul li a{
+        display: inline-block;
+        color: rgb(53, 53, 53);
+        font-size: 14px;
+        padding: 5px 8px;
+        font-weight: bold;
+        /* line-height: 70px; */
+    }
+    #mainmenu ul li a:hover{
+        border-bottom: 2px solid rgb(0,160,201);
+    }
+    #mainmenu>ul>li:nth-child(2) a{
+        border-bottom: 2px solid rgb(0,160,201);
+        color: rgb(0,160,201);
+    }
+    #mainimg{
+        width:100%;
+        padding-top: 90px;
+        position: relative;
+        height: 150px;
+    }
+    #mainimg img{
+        width: 100%;
+        height: 150px;
+    }
+    #mainimg .golf{
+        color: #fff;
+        position: absolute;
+        top: 65%;
+        left: 80%;
+    }
+    #mainimg h2{
+        font-weight: normal;
+        font-size: 30px;
+    }
+    #mainimg p{
+        font-size: 18px;
+        font-style: italic;
+    }
+    #submenu{
+        background-color: #eee;
+        width: 100%;
+        height: 40px;
+        text-align: center;
+    }
+    #submenu ul{
+        display: inline-block;
+    }
+    #submenu ul li{
+        float: left;
+    }
+    #submenu ul li a{
+        font-size: 13px;
+        color: rgb(53,53,53);
+        display: inline-block;
+        padding: 0 20px;
+        font-weight: bold;
+        line-height: 40px;
+    }
+    #submenu ul li a:hover{
+        color:rgb(0,160,201);
+        border-bottom:2px solid rgb(0,160,201)
+    }
+    #submenu ul li:first-child a{
+        color:rgb(0,160,201);
+        border-bottom:2px solid rgb(0,160,201)
+    }
+    section{
+        width: 95%;
+        margin: 0 auto;
+    }
+    #text{
+        width: 700px;
+        text-align: center;
+        margin: 60px auto;
+    }
+    #text h1{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    #text p{
+        font-size: 13px;
+        width: 100%;
+        line-height: 22px;
+        color: rgb(53,53,53);
+    }
+    #course{
+        width: 100%;
+        height: 580px;
+        /* border: 1px solid red; */
+    }
+    #course h3{
+        padding: 0 0 10px 10%;
+        font-size: 18px;
+        color: rgb(53,53,53);
+    }
+    #tabs{
+        width: 720px;
+        position: relative;
+        margin: 0 auto;
+    }
+    .tt{
+        width: 180px;
+        float: left;
+        text-align: center;
+    }
+    .tt .tab img{
+        width: 80%;
+        margin: 20px;
+    }
+    #tabs label{
+        width: 180px;
+        display: block;
+        text-align: center; 
+        background-color: #eee;        
+        padding: 10px 0;
+        border-top:1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+        color: rgb(78, 78, 78);
+    }
+    #tabs .tab{
+        background-color: #fff;
+        border-bottom: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        position: absolute;
+        left: 0;
+        width: 720px;
+        display: none;
+    }
+    /* .tab h4{
+        font-weight: normal;
+        color: rgb(53,53,53);
+    }
+    .tab p{
+        font-size: 12px;
+        color: rgb(53,53,53);
+    } */
+    #tabs input[type="radio"]{
+        display: none;
+    }
+    /* 인접선택자 : 선택자A+선택자B
+                   선택자A 바로 다음에 오는 선택자B를 선택 */
+    #tabs input[type="radio"]:checked+label{
+        background-color: #fff;
+    }
+    #tabs input[type="radio"]:checked+label+.tab{
+        display: block;
+    }
+    #table img{
+        width: 85%;
+    }
+    #table{
+        width: 100%;
+        margin: 0 auto;
+        /* border: 1px solid red; */
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    #bottombar{
+        width: 100%;
+        height: 40px;
+        background-color: #eee;
+        /* margin-top: 50px; */
+        /* border-top: 1px solid gray; */
+        /* border-bottom: 1px solid #000; */
+    }
+    #bottombar ul{
+        width: 90%;
+        height: 40px;
+        margin: 0 auto;
+    }
+    #bottombar ul li{
+        float: left;
+        height: 35px;
+    }
+    #bottombar ul li a{
+        display: inline-block;
+        color: rgb(53, 53, 53);
+        font-size: 12px;
+        /* font-weight: bold; */
+        padding: 0 8px;
+        line-height: 40px;
+    }
+    #bottombar ul li:last-child a{
+        display: none;
+    }
+    #bottombar ul li a:hover{
+        font-weight: bold;
+    }
+    #bottombar ul li:nth-child(3) a, #bottombar ul li:nth-child(4) a{
+        color: rgb(0,160,201);
+    }
+    footer{
+        width: 100%;
+        height: 150px;
+        clear: both;
+        background-color: rgb(0, 0, 0);
+        color: #ccc;
+    }
+    footer p{
+        font-size: 9px;
+        padding-top: 20px;
+        line-height: 20px;
+        margin-left: 30px;
+    }
+    footer h4{
+        font-size: 10px;
+        font-weight: normal;
+        margin: 15px 0 10px 30px;
+    } 
+}
+@media screen and (min-width:960px){
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    #mainmenu ul li>ul{
+        display: none;
+    }
+    #topblack{
+        width: 100%;
+        height: 13px;
+        background-color: #000;
+    }
+    header{
+        width: 100%;
+        height: 103px;
+        /* border: 1px solid red; */
+        position: fixed;
+        z-index: 99;
+        box-shadow: 0 0 10px rgba(0,0,0,0.8);
+        background-color: #fff;
+    }
+    #logo{
+        background-image: url('logo.png');
+        width: 130px;
+        height: 52px;
+        display: block;
+        text-indent: -9999px;
+        float: left;
+        margin: 15px 0 15px 30px;
+        /* border: 1px solid red; */
+    }
+    #mainmenu ul{
+        padding-top: 30px;
+        height: 60px;
+        width: 85%;
+        /* border: 1px solid red; */
+        margin-left: 210px;
+    }
+    #mainmenu ul li{
+        float: left;
+        text-align: center;
+        width: 10%;
+    }
+    #mainmenu ul li a{
+        display: inline-block;
+        color: rgb(53, 53, 53);
+        font-size: 15px;
+        padding: 10px 0;
+        font-weight: bold;
+        /* line-height: 70px; */
+    }
+    #mainmenu ul li a:hover{
+        border-bottom: 2px solid rgb(0,160,201);
+    }
+    #mainmenu ul li:nth-child(2) a{
+        color:rgb(0,160,201);
+        border-bottom:2px solid rgb(0,160,201)
+    }
+    #mainimg{
+        width:100%;
+        padding-top: 100px;
+        position: relative;
+        height: 200px;
+    }
+    #mainimg img{
+        width: 100%;
+        height: 200px;
+    }
+    #mainimg .golf{
+        color: #fff;
+        position: absolute;
+        top: 60%;
+        left: 85%;
+    }
+    #mainimg h2{
+        font-weight: normal;
+        font-size: 36px;
+    }
+    #mainimg p{
+        font-size: 22px;
+        font-style: italic;
+    }
+    #submenu{
+        background-color: #eee;
+        width: 100%;
+        height: 40px;
+        text-align: center;
+    }
+    #submenu ul{
+        display: inline-block;
+    }
+    #submenu ul li{
+        float: left;
+    }
+    #submenu ul li a{
+        font-size: 13px;
+        color: rgb(53,53,53);
+        display: inline-block;
+        padding: 0 30px;
+        font-weight: bold;
+        line-height: 40px;
+    }
+    #submenu ul li a:hover{
+        color:rgb(0,160,201);
+        border-bottom:2px solid rgb(0,160,201)
+    }
+    #submenu ul li:first-child a{
+        color:rgb(0,160,201);
+        border-bottom:2px solid rgb(0,160,201)
+    }
+    section{
+        width: 95%;
+        margin: 0 auto;
+        /* border: 1px solid blue; */
+    }
+    #text{
+        width: 900px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+    #text h1{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    #text p{
+        font-size: 13px;
+        width: 100%;
+        line-height: 22px;
+        color: rgb(53,53,53);
+    }
+    #course{
+        width: 100%;
+        height: 560px;
+        margin-top: 50px;
+        /* border: 1px solid red; */
+    }
+    #course h3{
+        padding: 0 0 10px 10%;
+        font-size: 18px;
+        color: rgb(53,53,53);
+    }
+    #tabs{
+        width: 880px;
+        position: relative;
+        margin: 0 auto;
+    }
+    .tt{
+        width: 220px;
+        float: left;
+        text-align: center;
+    }
+    .tt .tab img{
+        width: 60%;
+        margin: 20px;
+    }
+    #tabs label{
+        width: 220px;
+        display: block;
+        text-align: center; 
+        background-color: #eee;        
+        padding: 10px 0;
+        border-top:1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+        color: rgb(78, 78, 78);
+    }
+    #tabs .tab{
+        background-color: #fff;
+        border-bottom: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        position: absolute;
+        left: 0;
+        width: 880px;
+        display: none;
+    }
+    /* .tab h4{
+        font-weight: normal;
+        color: rgb(53,53,53);
+    }
+    .tab p{
+        font-size: 12px;
+        color: rgb(53,53,53);
+    } */
+    #tabs input[type="radio"]{
+        display: none;
+    }
+    /* 인접선택자 : 선택자A+선택자B
+                   선택자A 바로 다음에 오는 선택자B를 선택 */
+    #tabs input[type="radio"]:checked+label{
+        background-color: #fff;
+    }
+    #tabs input[type="radio"]:checked+label+.tab{
+        display: block;
+    }
+    #table{
+        width: 100%;
+        /* margin: 0 auto; */
+        /* border: 1px solid red; */
+        text-align: center;
+        margin-bottom: 60px;
+        float: left;
+        height: 400px;
+    }
+    #bottombar{
+        clear: both;
+        width: 100%;
+        height: 40px;
+        background-color: #eee;
+    }
+    #bottombar{
+        width: 100%;
+        height: 40px;
+        margin-top: 80px;
+        /* border-top: 1px solid gray; */
+    }
+    #bottombar ul{
+        width: 90%;
+        height: 40px;
+        margin: 0 auto;
+    }
+    #bottombar ul li{
+        float: left;
+        height: 40px;
+    }
+    #bottombar ul li a{
+        display: inline-block;
+        color: rgb(53, 53, 53);
+        font-size: 13px;
+        /* font-weight: bold; */
+        padding: 0 20px;
+        line-height: 40px;
+    }
+    #bottombar ul li a:hover{
+        font-weight: bold;
+    }
+    #bottombar ul li:nth-child(3) a, #bottombar ul li:nth-child(4) a{
+        color: rgb(0,160,201);
+    }
+    footer{
+        width: 100%;
+        height: 150px;
+        clear: both;
+        background-color: rgb(0, 0, 0);
+        color: #ccc;
+    }
+    footer p{
+        font-size: 11px;
+        padding-top: 20px;
+        line-height: 22px;
+        margin-left: 80px;
+    }
+    footer h4{
+        font-size: 11px;
+        font-weight: normal;
+        margin-top:15px;
+        margin-left: 80px;
+    }
+}
