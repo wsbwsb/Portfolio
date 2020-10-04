@@ -612,6 +612,9 @@
         height: 30px;
         font-size: 0.875rem;
     }
+    .search i {
+        color: #000;
+    }
     .headercenter {
         width: 700px;
         text-align: center;
