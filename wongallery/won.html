@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WON GALLERY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/def4536023.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/jquery-animate-css-rotate-scale.js"></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    /*메뉴영역*/
+    #nav{
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        /* background-color: rgba(255,255,255,0.7); */
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    #nav #logo{
+        display: inline-block;
+        width: 74px;
+        height: 44px;
+        background: url('won/logo.png') no-repeat;
+        background-size: 80%;
+        margin-top: 25px;
+        margin-left: 40px;
+        text-indent: -9999px;
+    }
+    #nav h1{
+        float: left;
+        padding: 7px 10px 10px 10px;
+    }
+    #nav ul{
+        float: right;
+        margin-top: 10px;
+        margin-right: 50px;
+    }
+    #nav ul li{
+        display: inline-block;
+        font-size: 18px;
+        padding: 17px 10px 20px 10px;
+    }
+    #nav ul li a{
+        color: #fff;
+        display: block;
+        font-size: 13px;
+    }
+    #nav ul li a{
+        width: 10px;
+        height: 10px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+    }
+    #nav ul li .active{
+        background-color: #fff;
+    }
+    #nav ul li a em{
+        display: none;
+    }
+
+    /*section*/
+    #section1{
+        background-color: #120f1f;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #section1 .text{
+        font-family: 'HYSinMyeongJo';
+        text-align: right;
+        margin-left: 200px;
+        margin-right: 30px;
+        margin-top: 100px;
+    }
+    #section1 .text p{
+        font-size: 40px;
+        padding-right: 30px;
+    }
+    #section1 .text h2{
+        font-size: 80px;
+    }
+    #section1 .text h4{
+        font-size: 15px;
+        padding-right: 10px;
+        font-family: 'Noto Serif KR', serif;
+        letter-spacing: 1px;
+    }
+    #section1 .image img{
+        width: 350px;
+    }
+    #section1 #btn{
+        width: 12px;
+        height: 100px;
+        margin-right: -50px;
+    }
+    #section1 a{
+        display: inline-block;
+        padding: 7px 20px;
+        border: 1px solid #fff;
+        font-size: 13px;
+        font-family: '맑은 고딕';
+        color: #fff;
+        margin-top: 30px;
+        margin-right: 10px;
+    }
+    #section1 a:hover{
+        background-color: rgba(255,255,255,0.8);
+        color: #000;
+    }
+    #section2{
+        background-color: #9ac2dc;
+        position: relative;
+    }
+    #section2 #wrap{
+        width: 1024px;
+        padding-left: 5%;
+    }
+    #section2 .img{
+        float: left;
+        margin-top: 230px;
+        margin-left: 40px;
+        margin-bottom: 10px;
+    }
+    #section2 .img img{
+        margin-right: 15px;
+    }
+    #section2 .text{
+        clear: both;
+        font-family: 'Noto Serif KR', serif;
+        text-align: left;
+        margin-left: 40px;
+    }
+    #section2 .text h2{
+        font-size: 58px;
+        font-weight: 500;
+    }
+    #section2 .text p{
+        font-size: 28px;
+    }
+    #section2 .text p span{
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    #section2 a{
+        display: inline-block;
+        padding: 7px 20px;
+        border: 1px solid #fff;
+        font-size: 13px;
+        font-family: '맑은 고딕';
+        color: #fff;
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+    #section2 a:hover{
+        background-color: rgba(255,255,255,0.8);
+        color: #000;
+    }
+    #section2 #btn{
+        position: absolute;
+        top: 370px;
+        right: 80px;
+        width: 12px;
+        height: 100px;
+    }
+    #section2 #wrap{
+        margin-left: 70px;
+    }
+    #section3{
+        background-color: #a80313;
+        position: relative;
+    }
+    #section3 h2{
+        font-size: 70px;
+        font-family: 'Noto Serif KR', serif;
+        letter-spacing: 4px;
+    }
+    #section3 .img img{
+        margin-top: 150px;
+    }
+    #section3 p{
+        font-size: 25px;
+        font-family: 'Noto Serif KR', serif;
+    }
+    #section3 a{
+        display: inline-block;
+        padding: 7px 20px;
+        border: 1px solid #fff;
+        font-size: 13px;
+        font-family: '맑은 고딕';
+        color: #fff;
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+    #section3 a:hover{
+        background-color: rgba(255,255,255,0.8);
+        color: #000;
+    }
+    #section3 #btn{
+        position: absolute;
+        top: 370px;
+        right: 80px;
+        width: 12px;
+        height: 100px;
+    }
+    #section4{
+        background-color: #b6b6b6;
+        display: flex;
+        position: relative;
+    }
+    #section4 h2{
+        position: absolute;
+        font-size: 35px;
+        letter-spacing: 3px;
+        font-family: 'Noto Serif KR', serif;
+        left: 50%;
+        margin-left: -133.7px;
+        top: 250px;
+    }
+    #section4 #lens{
+        width: 1130px;
+        height: 286px;
+        margin: 0 auto;
+        margin-top: 350px;
+        padding-left: 20px;
+        overflow: hidden;
+    }
+    #section4 #film{
+        width: 2400px;
+    }
+    #section4 #film li{
+        float: left;
+        width: 226px;
+        height: 286px;
+        padding: 0 30px;
+    }
+    #section4 #film img{
+        width: 226px;
+        height: 286px;
+    }
+    #section4 .pre, .next{
+        position: relative;
+        top: 450px;
+    }
+    #section5{
+        background-color: #643a7c;
+    }
+    #section5 #accordion{
+        width: 990px;
+        height: 470px;
+        margin: 30px auto;
+        overflow: hidden;
+    }
+    #section5 h2{
+        font-family: 'Noto Serif KR', serif;
+        font-weight: normal;
+        letter-spacing: 1px;
+        text-align: left;
+        margin-left: 20px;
+        padding-top: 220px;
+    }
+    dt span{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #8c63a3;
+        font-family: 'Noto Serif KR', serif;
+    }
+    dt img{
+        width: 35%;
+    }
+    dt{
+        width: 62px;
+        height: 400px;
+        float: left;
+    }
+    .over span{
+        background-color: #c7a0dd;
+    }
+    #yayoi{
+        margin-top: 26px;
+    }
+    #egon{
+        margin-top: 10px;
+    }
+    dd{
+        width: 800px;
+        height: 400px;
+        background-color: #ddcaee;
+        margin: 0;
+        float: left;
+        display: flex;
+        overflow: hidden;
+        color: #000;
+        font-family: 'Noto Sans KR', sans-serif;
+        text-align: left;
+    }
+    dd>img{
+        margin-top: 80px;
+        margin-left: 30px;
+    }
+    dd .text{
+        width: 450px;
+        height: 200px;
+        margin-top: 100px;
+        margin-left: 30px;
+    }
+    dd h3{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    dd p{
+        width: 450px;
+        font-size: 15px;
+        line-height: 25px;
+        
+    }
+    #section6{
+        background-color: #221f3b;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    #section6 #top{
+        display: flex;
+        padding-top: 300px;
+        width: 1024px;
+        margin: 0 auto;
+    }
+    #top #box1{
+        width: 400px;
+        text-align: left;
+        margin-left: 30px;
+    }
+    #top h2{
+        font-size: 35px;
+    }
+    #top #box1 input{
+        width: 280px;
+        height: 25px;
+        margin-top: 20px;
+        border: transparent;
+        background-color: transparent;
+        outline: transparent;
+        border-bottom: 1px solid #ccc;
+        color: #fff;
+        font-size: 15px;
+    }
+    #top ul li a{
+        color: #ccc;
+        display: inline-block;
+        padding: 5px 0;
+        font-weight: lighter;
+        font-size: 15px;
+    }
+    #top ul h3{
+        margin-bottom: 10px;
+    }
+    #top ul li a:hover{
+        color: rgb(100, 100, 100);
+    }
+    #box2, #box3{
+        width: 140px;
+    }
+    #box2{
+        margin-left: 130px;
+    }
+    #box4 li{
+        font-size: 15px;
+        color: #ccc;
+        font-weight: lighter;
+        padding: 5px 0;
+    }
+    #box4{
+        margin-left: 20px;
+    }
+    #section6 #bottom{
+        margin-top: 150px;
+    }
+    #bottom img{
+        width: 80px;
+        height: 50px;
+    }
+    #bottom p{
+        margin-top: 10px;
+        font-size: 11px;
+        color: rgb(153, 153, 153);
+    }
+    #content>div{
+        height: 100vh;
+        text-align: center;
+        color: #fff;
+    }
+    .box{
+        width: 1024px;
+        display: flex;
+    }
+    .box2{
+        width: 1024px;
+        margin: 0 auto;
+    }
+
+    /* 텍스트 애니메이션 */
+        #section1 div p,h2,h4,.more,.image{opacity: 0;}
+        #content #section1> div p {transition: all 0.2s ease-in-out;}
+        #content #section1> div h2 {transition: all 0.7s ease-in-out;}
+        #content #section1> div h4 {transition: all 1.1s ease-in-out;}
+        #content #section1> div .more {transition: opacity 1.6s ease-in-out;}
+        #content #section1> div .image {transition: all 1.0s ease-in-out;}
+        
+        #section2 h2,#section2 p,.more,.img {opacity: 0;}
+        #content #section2> div p {transition: all 1.3s ease-in-out;}
+        #content #section2> div h2 {transition: all 1.0s ease-in-out;}
+        #content #section2> div .more {transition: opacity 1.5s ease-in-out;}
+        #content #section2> div .img {transition: all 0.5s ease-in-out;}
+
+        #section3 h2,#section3 p,.more,.img {opacity: 0;}
+        #content #section3> div p {transition: all 1.3s ease-in-out;}
+        #content #section3> div h2 {transition: all 1.0s ease-in-out;}
+        #content #section3> div .more {transition: opacity 1.5s ease-in-out;}
+        #content #section3>.img {transition: all 0.5s ease-in-out;}
+
+        #section4 h2,#lens,#section4 span {opacity: 0;}
+        #content #section4>h2 {transition: all 0.5s ease-in-out;}
+        #content #section4>#lens,span {transition: opacity 1.0s ease-in-out;}
+
+        #section5 h2,#accordion {opacity: 0;}
+        #content #section5 h2 {transition: all 0.5s ease-in-out;}
+        #content #section5 #accordion {transition: all 1.0s ease-in-out;}
+
+        #section6 h2,#section6 .search,#section6 h3,#bottom,#section6 li {opacity: 0;}
+        #content #section6 h2{transition: all 0.5s ease-in-out;}
+        #content #section6 .search {transition: all 1.0s ease-in-out;}
+        #content #section6 h3{transition: all 0.5s ease-in-out;}
+        #content #section6 li {transition: all 1.0s ease-in-out;}
+        #content #section6 #bottom {transition: all 1.5s ease-in-out;}
+
+        #section1.show p,#section1.show h2,#section1.show h4,#section1.show .more,#section1.show .image{opacity: 1;}
+        #section2.show p,#section2.show h2,#section2.show .more,#section2.show .img{opacity: 1;}
+        #section3.show p,#section3.show h2,#section3.show .more,#section3.show .img{opacity: 1;}
+        #section4.show h2,#section4.show #lens,#section4.show span{opacity: 1;}
+        #section5.show h2,#section5.show #accordion {opacity: 1;}
+        #section6.show h2,#section6.show .search,#section6.show h3,#section6.show #bottom,#section6.show li {opacity: 1;}
+        
+</style>
+<script>
+    $(function(){
+        $("#logo").click(function(){
+            $('html').stop().animate({ scrollTop: 0 }, 800);
+        });
+            
+    
+        //패럴랙스 스크롤//
+        var nav=$("ul>li");
+        var cont=$("#content>div");
+
+        nav.click(function(){
+            var target=$(this);
+            var i=target.index();
+
+            var section=cont.eq(i);
+            var offset=section.offset().top;
+
+            $("html, body").animate({
+                scrollTop:offset
+            },400,"swing");
+        });
+        
+        //리스트 클릭//
+        $("#nav ul li a").click(function(){
+            $("#nav ul li a").removeClass("active");
+            $(this).addClass("active");
+        });
+        
+        //슬라이드//
+        $("#film li:last").prependTo("#film");
+            $("#film").css("marginLeft","-286px");
+
+            $(".next").click(function(){
+                // $(".next, .pre").hide();
+                $("#film").animate({
+                    marginLeft:"-=286px"
+                },300,"swing",function(){
+                    $("#film li:first").appendTo("#film");
+                    $("#film").css("marginLeft","-286px");
+                });
+            });
+            $(".pre").click(function(){
+                $("#film").animate({
+                    marginLeft:"+=286px"
+                },300,"swing",function(){
+                    $("#film li:last").prependTo("#film");
+                    $("#film").css("marginLeft","-286px");
+                });
+            });
+
+        });
+    //아코디언//
+    $(function(){
+        $("dd:not(:first)").css("width","0px");
+        $("dl dt").click(function(){
+            if($("+dd",this).css("width")=="0px"){
+                $("dd").stop().animate({width:"0px"});
+                $("+dd",this).stop().animate({width:"800px"});
+            }
+            
+        }).mouseover(function(){
+                $(this).addClass("over");
+            }).mouseout(function(){
+                $(this).removeClass("over");
+            });
+
+
+
+         var dot = $("#nav>ul>li>a");
+         var cont = $("#content>div");
+
+
+         $("#section1").addClass("show");
+         $(window).scroll(function(){
+            var wScroll = $(this).scrollTop();
+            
+            //텍스트 애니메이션//
+            
+            if(wScroll >= cont.eq(0).offset().top - $(window).height()/3 ){
+                cont.removeClass("show");
+                cont.eq(0).addClass("show");
+            }
+            if(wScroll >= cont.eq(1).offset().top - $(window).height()/3 ){
+                cont.removeClass("show");
+                cont.eq(1).addClass("show");
+            }
+            if(wScroll >= cont.eq(2).offset().top - $(window).height()/3 ){
+                cont.removeClass("show");
+                cont.eq(2).addClass("show");
+            }
+            if(wScroll >= cont.eq(3).offset().top - $(window).height()/3 ){
+                cont.removeClass("show");
+                cont.eq(3).addClass("show");
+            }
+            if(wScroll >= cont.eq(4).offset().top - $(window).height()/3 ){
+                cont.removeClass("show");
+                cont.eq(4).addClass("show");
+            }
+            if(wScroll >= cont.eq(5).offset().top - $(window).height()/3 ){
+                cont.removeClass("show");
+                cont.eq(5).addClass("show");
+            }
+            
+            
+            //클릭메뉴 제이쿼리//
+            if(wScroll >= cont.eq(0).offset().top){
+                dot.removeClass("active");
+                dot.eq(0).addClass("active");
+            }
+            if(wScroll >= cont.eq(1).offset().top){
+                dot.removeClass("active");
+                dot.eq(1).addClass("active");
+            }
+            if(wScroll >= cont.eq(2).offset().top){
+                dot.removeClass("active");
+                dot.eq(2).addClass("active");
+            }
+            if(wScroll >= cont.eq(3).offset().top){
+                dot.removeClass("active");
+                dot.eq(3).addClass("active");
+            }
+            if(wScroll >= cont.eq(4).offset().top){
+                dot.removeClass("active");
+                dot.eq(4).addClass("active");
+            }
+            if(wScroll >= cont.eq(5).offset().top){
+                dot.removeClass("active");
+                dot.eq(5).addClass("active");
+            }
+
+        });
+
+});
+
+
+    
+</script>
+<body>
+    <div id="nav">
+        <a href="#" id="logo">won</a>
+        <ul>
+            <li class="active"><a href="#section1" class="active"><em>1</em></a></li>
+            <li><a href="#section2"><em>2</em></a></li>
+            <li><a href="#section3"><em>3</em></a></li>
+            <li><a href="#section4"><em>4</em></a></li>
+            <li><a href="#section5"><em>5</em></a></li>
+            <li><a href="#section6"><em>6</em></a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <div id="section1" >
+            <div class="box">
+                <div class="text">
+                    <p>전통공예,</p>
+                    <h2>자개</h2>
+                    <h4>Korea Traditional HandyCraft</h4>
+                    <a href="#" class="more">자세히 보기</a>
+                </div>
+                <div class="image">
+                    <img src="won/art.png" alt="img">
+                </div>
+                <!-- <img src="won/list.png" alt="img" id="btn"> -->
+            </div>
+        </div>
+        <div id="section2">
+            <div id="wrap">
+                <div class="img">
+                    <img src="won/theo.png" alt="img" width="420" height="313">
+                    <img src="won/theo2.jpg" alt="img">
+                </div>
+                <div class="text">
+                    <h2>신인상주의</h2>
+                    <p>테오 반 리셀베르그<span>Theo Van Rysselberghe</span></p>
+                    <a href="#" class="more">자세히 보기</a>
+                </div>
+                <!-- <img src="won/list.png" alt="btn" id="btn"> -->
+            </div>
+        </div>
+        <div id="section3">
+            <div class="img">
+                <img src="won/tang.png" alt="img" width="420">
+            </div>
+            <div class="text">
+                <h2>幀畵</h2>
+                <p><span>ː</span>탱화</p>
+                <a href="#" class="more">자세히 보기</a>
+            </div>
+            <!-- <img src="won/list.png" alt="img" id="btn"> -->
+        </div>    
+        <div id="section4">
+            <span>
+                <img src="won/pre.png" alt="btn" class="pre">
+            </span>
+            <h2>COLLECTION</h2>
+            <div id="lens">
+                <ul id="film">
+                    <li>
+                        <img src="won/p1.jpg" alt="img">
+                    </li>
+                    <li>
+                        <img src="won/p2.jpg" alt="img">
+                    </li>
+                    <li>
+                        <img src="won/p3.jpg" alt="img">
+                    </li>
+                    <li>
+                        <img src="won/p4.jpg" alt="img">
+                    </li>
+                    <li>
+                        <img src="won/p5.jpg" alt="img">
+                    </li>
+                    <li>
+                        <img src="won/p6.jpg" alt="img">
+                    </li>
+                    <li>
+                        <img src="won/p7.jpg" alt="img">
+                    </li>
+                    <li>
+                        <img src="won/p8.jpg" alt="img">
+                    </li>
+                </ul>
+            </div>
+            <span>
+                <img src="won/next.png" alt="btn" class="next">
+            </span>
+        </div>
+        <div id="section5">
+            <div class="box2">
+            <h2>PREVIOUS EXHIBITION</h2>
+            <div id="accordion">
+                <dl>
+                    <dt id="step1" class="selected"><span><img src="won/frida.png" alt="btn"></span></dt>
+                    <dd>
+                        <img src="won/kahlo.jpg" alt="img" width="200" height="240">
+                        <div class="text">
+                             <h3>프리다 칼로</h3>
+                            <p>
+                            멕시코 출신 화가.<br>
+                            멕시코 민중벽화의 거장 디에고 리베라와 결혼으로 유명해졌으나, 
+                            교통사고로 인한 신체적 불편과 남편의 문란한 사생활에서 오는 
+                            정신적 고통을 극복하고 삶에 대한 강한 의지를 작품으로 
+                            승화시켰다. 1970년대 페미니스트들의 우상으로 인식되었다.
+                            </p>
+                        </div>
+                    </dd>
+                    <dt id="step2"><span><img src="won/Kusama.png" alt="btn" id="yayoi"></span></dt>
+                    <dd>
+                        <img src="won/yayoi.png" alt="img" width="200" height="240">
+                        <div class="text">
+                            <h3>쿠사마 야요이</h3>
+                            <p>
+                            일본 설치미술가.<br>
+                            뉴욕에서 여성, 비서구인이라는 조건으로 인해 팝아트의 
+                            주류에 속하지 못하였기에, 남성 주도의 팝 아트를 
+                            날카롭게 관찰하였다. 어릴 때의 육체적 학대로 인해 
+                            작품에서 강박적으로 일정한 패턴을 반복하였다. 
+                            1993년 일본을 대표해 베네치아 비엔날레에 참가하였다.
+                            </p>
+                        </div>
+                    </dd>
+                    <dt id="step3"><span><img src="won/Schiele.png" alt="btn" id="egon"></span></dt>
+                    <dd>
+                        <img src="won/egon.jpg" alt="img" width="200" height="240">
+                        <div class="text">
+                            <h3>에곤 쉴레</h3>
+                            <p>
+                            오스트리아의 화가.<br>
+                            에곤 쉴레는 소묘력이 뛰어난 화가로 윤곽선을 
+                            클림트처럼 장식적인 방향이 아니라 표현주의적인 
+                            격렬한 감정 표출 형태로 표현하였다. 작품에서 
+                            애정의 애환이 프로이트적인 분석을 통하여 
+                            표현되어졌다.
+                            </p>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            </div>
+        </div>
+        <div id="section6">
+            <div id="top">
+            <div id="box1">
+                <h2>WON GALLERY</h2>
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <ul id="box2">
+                <h3>About</h3>
+                <li><a href="#">About</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Location</a></li>
+            </ul>
+            <ul id="box3">
+                <h3>Service</h3>
+                <li><a href="#">Vision</a></li>
+                <li><a href="#">Consultation </a></li>
+            </ul>
+            <ul id="box4">
+                <h3>Contact</h3>
+                <li>thqls56@naver.com</li>
+                <li>Call : 041-556-3391</li>
+            </ul>
+            </div>
+            <div id="bottom">
+                <img src="won/logo.png" alt="logo">
+                <p>
+                    &copy; Copyright WonGallery
+                </p>
+            </div>
+    </div>
+    </div>
+</body>
+</html>
