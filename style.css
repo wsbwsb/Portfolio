@@ -60,9 +60,12 @@ a {
 }
 
 /* contents */
+#contents {
+    width: 100%;
+}
 #contents > div {
     margin-left: 17rem;
-    padding-left: 50px;
+    padding-left: 3.125rem;
     height: 100vh;
     border-bottom: 1px solid rgb(219, 219, 219);
 }
@@ -75,7 +78,7 @@ a {
 #section1 h1 {
     font-size: 5.3rem;
     font-family: 'Oswald', sans-serif;
-    padding-top: 280px;
+    padding-top: 17.5rem;
 }
 #section1 > h1 > span {
     font-family: 'Oswald', sans-serif;
@@ -83,22 +86,22 @@ a {
 }
 #section1 h3 {
     font-weight: 400;
-    margin-top: 40px;
+    margin-top: 2.5rem;
     font-size: 1.3rem;
 }
 #section1 p {
-    margin-top: 10px;
-    width: 850px;
+    margin-top: 0.625rem;
+    width: 53.125rem;
     line-height: 1.8rem;
     color: rgb(100, 100, 100);
     font-weight: 300;
 }
 #section1 .sns {
     display: flex;
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
 #section1 .sns li {
-    margin-right: 30px;
+    margin-right: 1.875rem;
 }
 #section1 .sns li a {
     display: inline-block;
@@ -122,17 +125,17 @@ a {
     position: relative;
 }
 #section2 h2 {
-    padding-top: 300px;
+    padding-top: 18.75rem;
 }
 #section2 h3 {
-    margin-top: 50px;
+    margin-top: 3.125rem;
     font-size: 1.5rem;
     font-weight: 400;
 }
 #section2 h4 {
     font-size: 1.1rem;
     font-weight: 300;
-    margin-top: 3px;
+    margin-top: 0.188rem;
 }
 #section2 span {
     position: absolute;
@@ -144,25 +147,24 @@ a {
 #section2 a {
     display: inline-block;
     font-size: 0.9rem;
-    margin-top: 15px;
+    margin-top: 0.938rem;
     color: rgb(105, 105, 105);
     font-weight: 300;
 }
 #section2 a:hover {
-    /* font-weight: bold; */
     color: var(--main);
 }
 
 #section3 {
-    padding-top: 80px;
+    padding-top: 5rem;
 }
 #section3 ul {
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 #section3 ul li {
     float: left;
-    width: 158px;
-    margin-right: 25px;
+    width: 9.875rem;
+    margin-right: 1.563rem;
 }
 #section3 ul li .text h3 {
     font-size: 1.08rem;
@@ -183,7 +185,7 @@ a {
     opacity: 0.5;
 }
 #section3 ul li .text {
-    padding-bottom: 15px;
+    padding-bottom: 0.938rem;
 }
 #section3 ul li:nth-child(8) {
     margin-right: 0;
@@ -193,20 +195,20 @@ a {
 }
 
 #section4 {
-    padding-top: 100px;
+    padding-top: 6.25rem;
 }
 #section4 .list {
-    width: 1200px;
+    width: 75rem;
     display: flex;
     justify-content: space-between;
-    padding-top: 70px;
+    padding-top: 4.375rem;
 }
 #section4 .list h3 {
     font-size: 1.2rem;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 #section4 .practice-list li {
-    margin: 10px 0;
+    margin: 0.625rem 0;
 }
 #section4 .practice-list li a {
     transition: all 0.2s;
@@ -219,21 +221,21 @@ a {
 }
 #section4 .practice-list li span {
     display: inline-block;
-    width: 5px;
-    height: 5px;
+    width: 0.313rem;
+    height: 0.313rem;
     border-radius: 50%;
     background-color: var(--main);
-    margin-bottom: 3px;
-    margin-right: 10px;
+    margin-bottom: 0.188rem;
+    margin-right: 0.625rem;
 }
 #section4 .php-list li {
-    width: 250px;
+    width: 15.625rem;
     float: left;
 }
 #section4 .php-list li img {
     display: block;
-    padding-left: 30px;
-    margin-bottom: 15px;
+    padding-left: 1.875rem;
+    margin-bottom: 0.938rem;
 }
 #section4 .php-list li a {
     transition: all 0.2s;
@@ -248,22 +250,22 @@ a {
     position: relative;
 }
 #section6 h2 {
-    padding-top: 300px;
-    margin-bottom: 100px;
+    padding-top: 18.75rem;
+    margin-bottom: 6.25rem;
 }
 #section6 p,
 #section6 span {
     font-size: 1.2rem;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 #section6 .ment {
     font-size: 2rem;
     letter-spacing: -0.5px;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 #section6 a {
     display: inline-block;
-    margin-bottom: 5px;
+    margin-bottom: 0.313rem;
     transition: all 0.2s;
     letter-spacing: 1px;
 }
@@ -276,7 +278,7 @@ a {
     font-weight: 100;
     letter-spacing: 1px;
     position: absolute;
-    bottom: 40px;
+    bottom: 2.5rem;
 }
 
 /*텍스트 애니메이션*/
